@@ -1,8 +1,6 @@
 import Node from './Node.js';
 import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
 
-/** @module VarNode **/
-
 /**
  * Class for representing shader variables as nodes. Variables are created from
  * existing nodes like the following:
@@ -82,6 +80,18 @@ class VarNode extends Node {
 
 	}
 
+	getMemberType( builder, name ) {
+
+		return this.node.getMemberType( builder, name );
+
+	}
+
+	getElementType( builder ) {
+
+		return this.node.getElementType( builder );
+
+	}
+
 	getNodeType( builder ) {
 
 		return this.node.getNodeType( builder );
@@ -117,8 +127,6 @@ class VarNode extends Node {
 
 		if ( shouldTreatAsReadOnly ) {
 
-			const type = builder.getType( nodeVar.type );
-
 			if ( isWebGPUBackend ) {
 
 				declarationPrefix = isDeterministic
@@ -127,7 +135,9 @@ class VarNode extends Node {
 
 			} else {
 
-				declarationPrefix = `const ${ type } ${ propertyName }`;
+				const count = builder.getArrayCount( node );
+
+				declarationPrefix = `const ${ builder.getVar( nodeVar.type, propertyName, count ) }`;
 
 			}
 

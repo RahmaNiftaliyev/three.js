@@ -28,7 +28,7 @@
 			import * as THREE from 'three';
 
 			import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
-			import { XRButton } from 'three/addons/webxr/XRButtonGPU.js';
+			import { XRButton } from 'three/addons/webxr/XRButton.js';
 			import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 
 			const clock = new THREE.Clock();
@@ -96,7 +96,7 @@
 
 				raycaster = new THREE.Raycaster();
 
-				renderer = new THREE.WebGPURenderer( { forceWebGL: true } );
+				renderer = new THREE.WebGPURenderer( { antialias: true, forceWebGL: true, colorBufferType: THREE.UnsignedByteType } );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.setAnimationLoop( animate );
@@ -122,7 +122,13 @@
 				controller.addEventListener( 'selectend', onSelectEnd );
 				controller.addEventListener( 'connected', function ( event ) {
 
-					this.add( buildController( event.data ) );
+					const targetRayMode = event.data.targetRayMode;
+
+					if ( targetRayMode === 'tracked-pointer' || targetRayMode === 'gaze' ) {
+
+						this.add( buildController( event.data ) );
+
+					}
 
 				} );
 				controller.addEventListener( 'disconnected', function () {

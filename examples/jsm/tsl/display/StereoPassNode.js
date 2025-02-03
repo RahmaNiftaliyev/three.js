@@ -1,8 +1,6 @@
 import { StereoCamera, Vector2, PassNode, RendererUtils } from 'three/webgpu';
 import { nodeObject } from 'three/tsl';
 
-/** @module StereoPassNode **/
-
 const _size = /*@__PURE__*/ new Vector2();
 
 let _rendererState;

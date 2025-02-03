@@ -2,8 +2,6 @@ import Node from '../core/Node.js';
 import { expression } from '../code/ExpressionNode.js';
 import { nodeObject, nodeArray } from '../tsl/TSLBase.js';
 
-/** @module LoopNode **/
-
 /**
  * This module offers a variety of ways to implement loops in TSL. In it's basic form it's:
  * ```js
@@ -274,7 +272,7 @@ export const Continue = () => expression( 'continue' ).append();
  */
 export const Break = () => expression( 'break' ).append();
 
-// deprecated
+// Deprecated
 
 /**
  * @function

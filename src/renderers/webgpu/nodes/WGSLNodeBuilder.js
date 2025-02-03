@@ -203,7 +203,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 		/**
 		 * A map for managing scope arrays. Only relevant for when using
-		 * {@link module:WorkgroupInfoNode} in context of compute shaders.
+		 * {@link WorkgroupInfoNode} in context of compute shaders.
 		 *
 		 * @type {Map<String,Object>}
 		 */
@@ -385,6 +385,19 @@ class WGSLNodeBuilder extends NodeBuilder {
 		nodeCode.build( this );
 
 		return functionName;
+
+	}
+
+	/**
+	 * Generates the array declaration string.
+	 *
+	 * @param {String} type - The type.
+	 * @param {Number?} [count] - The count.
+	 * @return {String} The generated value as a shader string.
+	 */
+	generateArrayDeclaration( type, count ) {
+
+		return `array< ${ this.getType( type ) }, ${ count } >`;
 
 	}
 
@@ -745,7 +758,13 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 			} else if ( type === 'buffer' || type === 'storageBuffer' || type === 'indirectStorageBuffer' ) {
 
-				return `NodeBuffer_${ node.id }.${name}`;
+				if ( this.isCustomStruct( node ) ) {
+
+					return name;
+
+				}
+
+				return name + '.value';
 
 			} else {
 
@@ -886,7 +905,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 				if ( ( shaderStage === 'fragment' || shaderStage === 'compute' ) && this.isUnfilterable( node.value ) === false && texture.store === false ) {
 
-					const sampler = new NodeSampler( `${uniformNode.name}_sampler`, uniformNode.node, group );
+					const sampler = new NodeSampler( `${ uniformNode.name }_sampler`, uniformNode.node, group );
 					sampler.setVisibility( gpuShaderStageLib[ shaderStage ] );
 
 					bindings.push( sampler, texture );
@@ -911,6 +930,8 @@ class WGSLNodeBuilder extends NodeBuilder {
 				bindings.push( buffer );
 
 				uniformGPU = buffer;
+
+				uniformNode.name = name ? name : 'NodeBuffer_' + uniformNode.id;
 
 			} else {
 
@@ -1411,18 +1432,22 @@ ${ flowData.code }
 	getStructMembers( struct ) {
 
 		const snippets = [];
-		const members = struct.getMemberTypes();
 
-		for ( let i = 0; i < members.length; i ++ ) {
+		for ( const member of struct.members ) {
 
-			const member = members[ i ];
-			snippets.push( `\t@location( ${i} ) m${i} : ${ member }<f32>` );
+			const prefix = struct.output ? '@location( ' + member.index + ' ) ' : '';
+
+			let type = this.getType( member.type );
+
+			if ( member.atomic ) {
+
+				type = 'atomic< ' + type + ' >';
+
+			}
+
+			snippets.push( `\t${ prefix + member.name } : ${ type }` );
 
 		}
-
-		const builtins = this.getBuiltins( 'output' );
-
-		if ( builtins ) snippets.push( '\t' + builtins );
 
 		return snippets.join( ',\n' );
 
@@ -1436,26 +1461,29 @@ ${ flowData.code }
 	 */
 	getStructs( shaderStage ) {
 
-		const snippets = [];
+		let result = '';
+
 		const structs = this.structs[ shaderStage ];
 
-		for ( let index = 0, length = structs.length; index < length; index ++ ) {
+		if ( structs.length > 0 ) {
 
-			const struct = structs[ index ];
-			const name = struct.name;
+			const snippets = [];
 
-			let snippet = `\struct ${ name } {\n`;
-			snippet += this.getStructMembers( struct );
-			snippet += '\n}';
+			for ( const struct of structs ) {
 
+				let snippet = `struct ${ struct.name } {\n`;
+				snippet += this.getStructMembers( struct );
+				snippet += '\n};';
 
-			snippets.push( snippet );
+				snippets.push( snippet );
 
-			snippets.push( `\nvar<private> output : ${ name };\n\n` );
+			}
+
+			result = '\n' + snippets.join( '\n\n' ) + '\n';
 
 		}
 
-		return snippets.join( '\n\n' );
+		return result;
 
 	}
 
@@ -1464,11 +1492,24 @@ ${ flowData.code }
 	 *
 	 * @param {String} type - The variable's type.
 	 * @param {String} name - The variable's name.
+	 * @param {Number?} [count=null] - The array length.
 	 * @return {String} The WGSL snippet that defines a variable.
 	 */
-	getVar( type, name ) {
+	getVar( type, name, count = null ) {
 
-		return `var ${ name } : ${ this.getType( type ) }`;
+		let snippet = `var ${ name } : `;
+
+		if ( count !== null ) {
+
+			snippet += this.generateArrayDeclaration( type, count );
+
+		} else {
+
+			snippet += this.getType( type );
+
+		}
+
+		return snippet;
 
 	}
 
@@ -1487,7 +1528,7 @@ ${ flowData.code }
 
 			for ( const variable of vars ) {
 
-				snippets.push( `\t${ this.getVar( variable.type, variable.name ) };` );
+				snippets.push( `\t${ this.getVar( variable.type, variable.name, variable.count ) };` );
 
 			}
 
@@ -1552,6 +1593,12 @@ ${ flowData.code }
 		const code = snippets.join( ',\n\t' );
 
 		return shaderStage === 'vertex' ? this._getWGSLStruct( 'VaryingsStruct', '\t' + code ) : code;
+
+	}
+
+	isCustomStruct( nodeUniform ) {
+
+		return nodeUniform.value.isStorageBufferAttribute && nodeUniform.node.structTypeNode !== null;
 
 	}
 
@@ -1636,7 +1683,7 @@ ${ flowData.code }
 
 					const componentPrefix = this.getComponentTypeFromTexture( texture ).charAt( 0 );
 
-					textureType = `texture${multisampled}_2d<${ componentPrefix }32>`;
+					textureType = `texture${ multisampled }_2d<${ componentPrefix }32>`;
 
 				}
 
@@ -1645,15 +1692,23 @@ ${ flowData.code }
 			} else if ( uniform.type === 'buffer' || uniform.type === 'storageBuffer' || uniform.type === 'indirectStorageBuffer' ) {
 
 				const bufferNode = uniform.node;
-				const bufferType = this.getType( bufferNode.bufferType );
+				const bufferType = this.getType( bufferNode.getNodeType( this ) );
 				const bufferCount = bufferNode.bufferCount;
-
 				const bufferCountSnippet = bufferCount > 0 && uniform.type === 'buffer' ? ', ' + bufferCount : '';
-				const bufferTypeSnippet = bufferNode.isAtomic ? `atomic<${bufferType}>` : `${bufferType}`;
-				const bufferSnippet = `\t${ uniform.name } : array< ${ bufferTypeSnippet }${ bufferCountSnippet } >\n`;
 				const bufferAccessMode = bufferNode.isStorageBufferNode ? `storage, ${ this.getStorageAccess( bufferNode, shaderStage ) }` : 'uniform';
 
-				bufferSnippets.push( this._getWGSLStructBinding( 'NodeBuffer_' + bufferNode.id, bufferSnippet, bufferAccessMode, uniformIndexes.binding ++, uniformIndexes.group ) );
+				if ( this.isCustomStruct( uniform ) ) {
+
+					bufferSnippets.push( `@binding( ${ uniformIndexes.binding ++ } ) @group( ${ uniformIndexes.group } ) var<${ bufferAccessMode }> ${ uniform.name } : ${ bufferType };` );
+
+				} else {
+
+					const bufferTypeSnippet = bufferNode.isAtomic ? `atomic<${ bufferType }>` : `${ bufferType }`;
+					const bufferSnippet = `\tvalue : array< ${ bufferTypeSnippet }${ bufferCountSnippet } >`;
+
+					bufferSnippets.push( this._getWGSLStructBinding( uniform.name, bufferSnippet, bufferAccessMode, uniformIndexes.binding ++, uniformIndexes.group ) );
+
+				}
 
 			} else {
 
@@ -1698,6 +1753,8 @@ ${ flowData.code }
 		this.sortBindingGroups();
 
 		for ( const shaderStage in shadersData ) {
+
+			this.shaderStage = shaderStage;
 
 			const stageData = shadersData[ shaderStage ];
 			stageData.uniforms = this.getUniforms( shaderStage );
@@ -1747,7 +1804,8 @@ ${ flowData.code }
 
 						if ( isOutputStruct ) {
 
-							stageData.returnType = outputNode.nodeType;
+							stageData.returnType = outputNode.getNodeType( this );
+							stageData.structs += 'var<private> output : ' + stageData.returnType + ';';
 
 							flow += `return ${ flowSlotData.result };`;
 
@@ -1761,7 +1819,7 @@ ${ flowData.code }
 
 							stageData.returnType = 'OutputStruct';
 							stageData.structs += this._getWGSLStruct( 'OutputStruct', structSnippet );
-							stageData.structs += '\nvar<private> output : OutputStruct;\n\n';
+							stageData.structs += '\nvar<private> output : OutputStruct;';
 
 							flow += `output.color = ${ flowSlotData.result };\n\n\treturn output;`;
 
@@ -1775,8 +1833,9 @@ ${ flowData.code }
 
 			stageData.flow = flow;
 
-
 		}
+
+		this.shaderStage = null;
 
 		if ( this.material !== null ) {
 
@@ -1915,6 +1974,9 @@ ${ flowData.code }
 // directives
 ${shaderData.directives}
 
+// structs
+${shaderData.structs}
+
 // uniforms
 ${shaderData.uniforms}
 
@@ -1954,11 +2016,11 @@ fn main( ${shaderData.attributes} ) -> VaryingsStruct {
 // global
 ${ diagnostics }
 
-// uniforms
-${shaderData.uniforms}
-
 // structs
 ${shaderData.structs}
+
+// uniforms
+${shaderData.uniforms}
 
 // codes
 ${shaderData.codes}
@@ -1996,6 +2058,9 @@ var<private> instanceIndex : u32;
 
 // locals
 ${shaderData.scopedArrays}
+
+// structs
+${shaderData.structs}
 
 // uniforms
 ${shaderData.uniforms}
@@ -2054,8 +2119,8 @@ ${vars}
 		const structSnippet = this._getWGSLStruct( structName, vars );
 
 		return `${structSnippet}
-@binding( ${binding} ) @group( ${group} )
-var<${access}> ${name} : ${structName};`;
+@binding( ${ binding } ) @group( ${ group } )
+var<${access}> ${ name } : ${ structName };`;
 
 	}
 

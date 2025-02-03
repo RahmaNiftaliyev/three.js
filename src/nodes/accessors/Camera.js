@@ -4,14 +4,12 @@ import { Vector3 } from '../../math/Vector3.js';
 import { Fn } from '../tsl/TSLBase.js';
 import { uniformArray } from './UniformArrayNode.js';
 
-/** @module Camera **/
-
 /**
  * TSL object that represents the current `index` value of the camera if used ArrayCamera.
  *
  * @type {UniformNode<uint>}
  */
-export const cameraIndex = /*@__PURE__*/ uniform( 'uint' ).setGroup( sharedUniformGroup( 'cameraIndex' ) ).vertexStage();
+export const cameraIndex = /*@__PURE__*/ uniform( 0, 'uint' ).setGroup( sharedUniformGroup( 'cameraIndex' ) ).toVarying( 'v_cameraIndex' );
 
 /**
  * TSL object that represents the `near` value of the camera used for the current render.
@@ -36,7 +34,7 @@ export const cameraProjectionMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 
 	let cameraProjectionMatrix;
 
-	if ( camera.isArrayCamera ) {
+	if ( camera.isArrayCamera && camera.cameras.length > 0 ) {
 
 		const matrices = [];
 
@@ -76,7 +74,7 @@ export const cameraViewMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 
 	let cameraViewMatrix;
 
-	if ( camera.isArrayCamera ) {
+	if ( camera.isArrayCamera && camera.cameras.length > 0 ) {
 
 		const matrices = [];
 

@@ -28,8 +28,6 @@ import { Vector4 } from '../../math/Vector4.js';
 import { RenderTarget } from '../../core/RenderTarget.js';
 import { DoubleSide, BackSide, FrontSide, SRGBColorSpace, NoToneMapping, LinearFilter, LinearSRGBColorSpace, HalfFloatType, RGBAFormat, PCFShadowMap } from '../../constants.js';
 
-/** @module Renderer **/
-
 const _scene = /*@__PURE__*/ new Scene();
 const _drawingBufferSize = /*@__PURE__*/ new Vector2();
 const _screen = /*@__PURE__*/ new Vector4();
@@ -55,6 +53,8 @@ class Renderer {
 	 * @param {Number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. This parameter can set to any other integer value than 0
 	 * to overwrite the default.
 	 * @param {Function?} [parameters.getFallback=null] - This callback function can be used to provide a fallback backend, if the primary backend can't be targeted.
+	 * @param {Number} [parameters.colorBufferType=HalfFloatType] - Defines the type of color buffers. The default `HalfFloatType` is recommend for best
+	 * quality. To save memory and bandwidth, `UnsignedByteType` might be used. This will reduce rendering quality though.
 	 */
 	constructor( backend, parameters = {} ) {
 
@@ -76,7 +76,8 @@ class Renderer {
 			stencil = false,
 			antialias = false,
 			samples = 0,
-			getFallback = null
+			getFallback = null,
+			colorBufferType = HalfFloatType
 		} = parameters;
 
 		/**
@@ -578,6 +579,17 @@ class Renderer {
 		this.onDeviceLost = this._onDeviceLost;
 
 		/**
+		 * Defines the type of color buffers. The default `HalfFloatType` is recommend for
+		 * best quality. To save memory and bandwidth, `UnsignedByteType` might be used.
+		 * This will reduce rendering quality though.
+		 *
+		 * @private
+		 * @type {Number}
+		 * @default HalfFloatType
+		 */
+		this._colorBufferType = colorBufferType;
+
+		/**
 		 * Whether the renderer has been initialized or not.
 		 *
 		 * @private
@@ -630,7 +642,7 @@ class Renderer {
 		/**
 		 * The renderer's shadow configuration.
 		 *
-		 * @type {module:Renderer~ShadowMapConfig}
+		 * @type {ShadowMapConfig}
 		 */
 		this.shadowMap = {
 			enabled: false,
@@ -661,7 +673,7 @@ class Renderer {
 		/**
 		 * The renderer's debug configuration.
 		 *
-		 * @type {module:Renderer~DebugConfig}
+		 * @type {DebugConfig}
 		 */
 		this.debug = {
 			checkShaderErrors: true,
@@ -932,9 +944,7 @@ class Renderer {
 
 		if ( this._initialized === false ) await this.init();
 
-		const renderContext = this._renderScene( scene, camera );
-
-		await this.backend.resolveTimestampAsync( renderContext, 'render' );
+		this._renderScene( scene, camera );
 
 	}
 
@@ -973,6 +983,17 @@ class Renderer {
 	getMRT() {
 
 		return this._mrt;
+
+	}
+
+	/**
+	 * Returns the color buffer type.
+	 *
+	 * @return {Number} The color buffer type.
+	 */
+	getColorBufferType() {
+
+		return this._colorBufferType;
 
 	}
 
@@ -1130,7 +1151,7 @@ class Renderer {
 			frameBufferTarget = new RenderTarget( width, height, {
 				depthBuffer: depth,
 				stencilBuffer: stencil,
-				type: HalfFloatType, // FloatType
+				type: this._colorBufferType,
 				format: RGBAFormat,
 				colorSpace: LinearSRGBColorSpace,
 				generateMipmaps: false,
@@ -1934,7 +1955,7 @@ class Renderer {
 	}
 
 	/**
-	 * Async version of {@link module:Renderer~Renderer#clear}.
+	 * Async version of {@link Renderer#clear}.
 	 *
 	 * @async
 	 * @param {Boolean} [color=true] - Whether the color buffer should be cleared or not.
@@ -1951,7 +1972,7 @@ class Renderer {
 	}
 
 	/**
-	 * Async version of {@link module:Renderer~Renderer#clearColor}.
+	 * Async version of {@link Renderer#clearColor}.
 	 *
 	 * @async
 	 * @return {Promise} A Promise that resolves when the clear operation has been executed.
@@ -1963,7 +1984,7 @@ class Renderer {
 	}
 
 	/**
-	 * Async version of {@link module:Renderer~Renderer#clearDepth}.
+	 * Async version of {@link Renderer#clearDepth}.
 	 *
 	 * @async
 	 * @return {Promise} A Promise that resolves when the clear operation has been executed.
@@ -1975,7 +1996,7 @@ class Renderer {
 	}
 
 	/**
-	 * Async version of {@link module:Renderer~Renderer#clearStencil}.
+	 * Async version of {@link Renderer#clearStencil}.
 	 *
 	 * @async
 	 * @return {Promise} A Promise that resolves when the clear operation has been executed.
@@ -2028,31 +2049,16 @@ class Renderer {
 		this._renderContexts.dispose();
 		this._textures.dispose();
 
+		if ( this._frameBufferTarget !== null ) this._frameBufferTarget.dispose();
+
+		Object.values( this.backend.timestampQueryPool ).forEach( queryPool => {
+
+			if ( queryPool !== null ) queryPool.dispose();
+
+		} );
+
 		this.setRenderTarget( null );
 		this.setAnimationLoop( null );
-
-	}
-
-	/**
-	 * Ensures the renderer is XR compatible.
-	 *
-	 * @async
-	 * @return {Promise} A Promise that resolve when the renderer is XR compatible.
-	 */
-	async makeXRCompatible() {
-
-		await this.backend.makeXRCompatible();
-
-	}
-
-	/**
-	 * Sets the XR rendering destination.
-	 *
-	 * @param {WebGLFramebuffer} xrTarget - The XR target.
-	 */
-	setXRTarget( xrTarget ) {
-
-		this.backend.setXRTarget( xrTarget );
 
 	}
 
@@ -2085,7 +2091,7 @@ class Renderer {
 	}
 
 	/**
-	 * Callback for {@link module:Renderer~Renderer#setRenderObjectFunction}.
+	 * Callback for {@link Renderer#setRenderObjectFunction}.
 	 *
 	 * @callback renderObjectFunction
 	 * @param {Object3D} object - The 3D object.
@@ -2101,14 +2107,14 @@ class Renderer {
 
 	/**
 	 * Sets the given render object function. Calling this method overwrites the default implementation
-	 * which is {@link module:Renderer~Renderer#renderObject}. Defining a custom function can be useful
+	 * which is {@link Renderer#renderObject}. Defining a custom function can be useful
 	 * if you want to modify the way objects are rendered. For example you can define things like "every
 	 * object that has material of a certain type should perform a pre-pass with a special overwrite material".
 	 * The custom function must always call `renderObject()` in its implementation.
 	 *
 	 * Use `null` as the first argument to reset the state.
 	 *
-	 * @param {module:Renderer~renderObjectFunction?} renderObjectFunction - The render object function.
+	 * @param {renderObjectFunction?} renderObjectFunction - The render object function.
 	 */
 	setRenderObjectFunction( renderObjectFunction ) {
 
@@ -2238,8 +2244,6 @@ class Renderer {
 
 		this.compute( computeNodes );
 
-		await this.backend.resolveTimestampAsync( computeNodes, 'compute' );
-
 	}
 
 	/**
@@ -2254,6 +2258,14 @@ class Renderer {
 		if ( this._initialized === false ) await this.init();
 
 		return this.backend.hasFeature( name );
+
+	}
+
+	async resolveTimestampsAsync( type = 'render' ) {
+
+		if ( this._initialized === false ) await this.init();
+
+		return this.backend.resolveTimestampsAsync( type );
 
 	}
 

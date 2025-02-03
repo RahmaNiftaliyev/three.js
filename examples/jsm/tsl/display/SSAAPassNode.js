@@ -1,8 +1,6 @@
 import { AdditiveBlending, Color, Vector2, RendererUtils, PassNode, QuadMesh, NodeMaterial } from 'three/webgpu';
 import { nodeObject, uniform, mrt, texture, getTextureIndex } from 'three/tsl';
 
-/** @module SSAAPassNode **/
-
 const _size = /*@__PURE__*/ new Vector2();
 
 let _rendererState;

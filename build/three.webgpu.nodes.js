@@ -3,8 +3,8 @@
  * Copyright 2010-2025 Three.js Authors
  * SPDX-License-Identifier: MIT
  */
-import { Color, Vector2, Vector3, Vector4, Matrix3, Matrix4, EventDispatcher, MathUtils, WebGLCoordinateSystem, WebGPUCoordinateSystem, ColorManagement, SRGBTransfer, NoToneMapping, StaticDrawUsage, InterleavedBuffer, DynamicDrawUsage, InterleavedBufferAttribute, NoColorSpace, UnsignedIntType, IntType, BackSide, CubeReflectionMapping, CubeRefractionMapping, TangentSpaceNormalMap, ObjectSpaceNormalMap, InstancedInterleavedBuffer, InstancedBufferAttribute, DataArrayTexture, FloatType, FramebufferTexture, LinearMipmapLinearFilter, DepthTexture, Material, NormalBlending, LineBasicMaterial, LineDashedMaterial, NoBlending, MeshNormalMaterial, WebGLCubeRenderTarget, BoxGeometry, Mesh, Scene, LinearFilter, CubeCamera, CubeTexture, EquirectangularReflectionMapping, EquirectangularRefractionMapping, AddOperation, MixOperation, MultiplyOperation, MeshBasicMaterial, MeshLambertMaterial, MeshPhongMaterial, Texture, MeshStandardMaterial, MeshPhysicalMaterial, MeshToonMaterial, MeshMatcapMaterial, SpriteMaterial, PointsMaterial, ShadowMaterial, Uint32BufferAttribute, Uint16BufferAttribute, DoubleSide, Camera, DepthStencilFormat, DepthFormat, UnsignedInt248Type, UnsignedByteType, RenderTarget, Plane, Object3D, HalfFloatType, LinearMipMapLinearFilter, OrthographicCamera, BufferGeometry, Float32BufferAttribute, BufferAttribute, UVMapping, Euler, LinearSRGBColorSpace, LessCompare, VSMShadowMap, RGFormat, BasicShadowMap, SphereGeometry, CubeUVReflectionMapping, PerspectiveCamera, RGBAFormat, LinearMipmapNearestFilter, NearestMipmapLinearFilter, Float16BufferAttribute, REVISION, ArrayCamera, WebXRController, RAD2DEG, SRGBColorSpace, PCFShadowMap, FrontSide, Frustum, DataTexture, RedIntegerFormat, RedFormat, RGIntegerFormat, RGBIntegerFormat, RGBFormat, RGBAIntegerFormat, UnsignedShortType, ByteType, ShortType, createCanvasElement, AddEquation, SubtractEquation, ReverseSubtractEquation, ZeroFactor, OneFactor, SrcColorFactor, SrcAlphaFactor, SrcAlphaSaturateFactor, DstColorFactor, DstAlphaFactor, OneMinusSrcColorFactor, OneMinusSrcAlphaFactor, OneMinusDstColorFactor, OneMinusDstAlphaFactor, CullFaceNone, CullFaceBack, CullFaceFront, CustomBlending, MultiplyBlending, SubtractiveBlending, AdditiveBlending, NotEqualDepth, GreaterDepth, GreaterEqualDepth, EqualDepth, LessEqualDepth, LessDepth, AlwaysDepth, NeverDepth, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedInt5999Type, AlphaFormat, LuminanceFormat, LuminanceAlphaFormat, RGB_S3TC_DXT1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGB_PVRTC_4BPPV1_Format, RGB_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_PVRTC_2BPPV1_Format, RGB_ETC1_Format, RGB_ETC2_Format, RGBA_ETC2_EAC_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_10x10_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_BPTC_Format, RED_RGTC1_Format, SIGNED_RED_RGTC1_Format, RED_GREEN_RGTC2_Format, SIGNED_RED_GREEN_RGTC2_Format, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter, NearestMipmapNearestFilter, NeverCompare, AlwaysCompare, LessEqualCompare, EqualCompare, GreaterEqualCompare, GreaterCompare, NotEqualCompare, warnOnce, NotEqualStencilFunc, GreaterStencilFunc, GreaterEqualStencilFunc, EqualStencilFunc, LessEqualStencilFunc, LessStencilFunc, AlwaysStencilFunc, NeverStencilFunc, DecrementWrapStencilOp, IncrementWrapStencilOp, DecrementStencilOp, IncrementStencilOp, InvertStencilOp, ReplaceStencilOp, ZeroStencilOp, KeepStencilOp, MaxEquation, MinEquation, SpotLight, PointLight, DirectionalLight, RectAreaLight, AmbientLight, HemisphereLight, LightProbe, LinearToneMapping, ReinhardToneMapping, CineonToneMapping, ACESFilmicToneMapping, AgXToneMapping, NeutralToneMapping, Group, Loader, FileLoader, MaterialLoader, ObjectLoader } from './three.core.js';
-export { AdditiveAnimationBlendMode, AnimationAction, AnimationClip, AnimationLoader, AnimationMixer, AnimationObjectGroup, AnimationUtils, ArcCurve, ArrowHelper, AttachedBindMode, Audio, AudioAnalyser, AudioContext, AudioListener, AudioLoader, AxesHelper, BasicDepthPacking, BatchedMesh, Bone, BooleanKeyframeTrack, Box2, Box3, Box3Helper, BoxHelper, BufferGeometryLoader, Cache, CameraHelper, CanvasTexture, CapsuleGeometry, CatmullRomCurve3, CircleGeometry, Clock, ColorKeyframeTrack, CompressedArrayTexture, CompressedCubeTexture, CompressedTexture, CompressedTextureLoader, ConeGeometry, ConstantAlphaFactor, ConstantColorFactor, Controls, CubeTextureLoader, CubicBezierCurve, CubicBezierCurve3, CubicInterpolant, CullFaceFrontBack, Curve, CurvePath, CustomToneMapping, CylinderGeometry, Cylindrical, Data3DTexture, DataTextureLoader, DataUtils, DefaultLoadingManager, DetachedBindMode, DirectionalLightHelper, DiscreteInterpolant, DodecahedronGeometry, DynamicCopyUsage, DynamicReadUsage, EdgesGeometry, EllipseCurve, ExtrudeGeometry, Fog, FogExp2, GLBufferAttribute, GLSL1, GLSL3, GridHelper, HemisphereLightHelper, IcosahedronGeometry, ImageBitmapLoader, ImageLoader, ImageUtils, InstancedBufferGeometry, InstancedMesh, Int16BufferAttribute, Int32BufferAttribute, Int8BufferAttribute, Interpolant, InterpolateDiscrete, InterpolateLinear, InterpolateSmooth, KeyframeTrack, LOD, LatheGeometry, Layers, Light, Line, Line3, LineCurve, LineCurve3, LineLoop, LineSegments, LinearInterpolant, LinearMipMapNearestFilter, LinearTransfer, LoaderUtils, LoadingManager, LoopOnce, LoopPingPong, LoopRepeat, MOUSE, Matrix2, MeshDepthMaterial, MeshDistanceMaterial, NearestMipMapLinearFilter, NearestMipMapNearestFilter, NormalAnimationBlendMode, NumberKeyframeTrack, OctahedronGeometry, OneMinusConstantAlphaFactor, OneMinusConstantColorFactor, PCFSoftShadowMap, Path, PlaneGeometry, PlaneHelper, PointLightHelper, Points, PolarGridHelper, PolyhedronGeometry, PositionalAudio, PropertyBinding, PropertyMixer, QuadraticBezierCurve, QuadraticBezierCurve3, Quaternion, QuaternionKeyframeTrack, QuaternionLinearInterpolant, RGBADepthPacking, RGBDepthPacking, RGB_BPTC_SIGNED_Format, RGB_BPTC_UNSIGNED_Format, RGDepthPacking, RawShaderMaterial, Ray, Raycaster, RenderTarget3D, RenderTargetArray, RingGeometry, ShaderMaterial, Shape, ShapeGeometry, ShapePath, ShapeUtils, Skeleton, SkeletonHelper, SkinnedMesh, Source, Sphere, Spherical, SphericalHarmonics3, SplineCurve, SpotLightHelper, Sprite, StaticCopyUsage, StaticReadUsage, StereoCamera, StreamCopyUsage, StreamDrawUsage, StreamReadUsage, StringKeyframeTrack, TOUCH, TetrahedronGeometry, TextureLoader, TextureUtils, TorusGeometry, TorusKnotGeometry, Triangle, TriangleFanDrawMode, TriangleStripDrawMode, TrianglesDrawMode, TubeGeometry, Uint8BufferAttribute, Uint8ClampedBufferAttribute, Uniform, UniformsGroup, VectorKeyframeTrack, VideoFrameTexture, VideoTexture, WebGL3DRenderTarget, WebGLArrayRenderTarget, WebGLRenderTarget, WireframeGeometry, WrapAroundEnding, ZeroCurvatureEnding, ZeroSlopeEnding } from './three.core.js';
+import { Color, Vector2, Vector3, Vector4, Matrix2, Matrix3, Matrix4, EventDispatcher, MathUtils, WebGLCoordinateSystem, WebGPUCoordinateSystem, ColorManagement, SRGBTransfer, NoToneMapping, StaticDrawUsage, InterleavedBuffer, DynamicDrawUsage, InterleavedBufferAttribute, NoColorSpace, UnsignedIntType, IntType, BackSide, CubeReflectionMapping, CubeRefractionMapping, TangentSpaceNormalMap, ObjectSpaceNormalMap, InstancedInterleavedBuffer, InstancedBufferAttribute, DataArrayTexture, FloatType, FramebufferTexture, LinearMipmapLinearFilter, DepthTexture, Material, NormalBlending, LineBasicMaterial, LineDashedMaterial, NoBlending, MeshNormalMaterial, WebGLCubeRenderTarget, BoxGeometry, Mesh, Scene, LinearFilter, CubeCamera, CubeTexture, EquirectangularReflectionMapping, EquirectangularRefractionMapping, AddOperation, MixOperation, MultiplyOperation, MeshBasicMaterial, MeshLambertMaterial, MeshPhongMaterial, Texture, MeshStandardMaterial, MeshPhysicalMaterial, MeshToonMaterial, MeshMatcapMaterial, SpriteMaterial, PointsMaterial, ShadowMaterial, arrayNeedsUint32, Uint32BufferAttribute, Uint16BufferAttribute, DoubleSide, Camera, DepthStencilFormat, DepthFormat, UnsignedInt248Type, UnsignedByteType, RenderTarget, Plane, Object3D, HalfFloatType, LinearMipMapLinearFilter, OrthographicCamera, BufferGeometry, Float32BufferAttribute, BufferAttribute, UVMapping, Euler, LinearSRGBColorSpace, LessCompare, VSMShadowMap, RGFormat, BasicShadowMap, SphereGeometry, CubeUVReflectionMapping, PerspectiveCamera, RGBAFormat, LinearMipmapNearestFilter, NearestMipmapLinearFilter, Float16BufferAttribute, REVISION, ArrayCamera, WebXRController, RAD2DEG, SRGBColorSpace, PCFShadowMap, FrontSide, Frustum, DataTexture, RedIntegerFormat, RedFormat, RGIntegerFormat, RGBIntegerFormat, RGBFormat, RGBAIntegerFormat, UnsignedShortType, ByteType, ShortType, warnOnce, createCanvasElement, AddEquation, SubtractEquation, ReverseSubtractEquation, ZeroFactor, OneFactor, SrcColorFactor, SrcAlphaFactor, SrcAlphaSaturateFactor, DstColorFactor, DstAlphaFactor, OneMinusSrcColorFactor, OneMinusSrcAlphaFactor, OneMinusDstColorFactor, OneMinusDstAlphaFactor, CullFaceNone, CullFaceBack, CullFaceFront, CustomBlending, MultiplyBlending, SubtractiveBlending, AdditiveBlending, NotEqualDepth, GreaterDepth, GreaterEqualDepth, EqualDepth, LessEqualDepth, LessDepth, AlwaysDepth, NeverDepth, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedInt5999Type, AlphaFormat, LuminanceFormat, LuminanceAlphaFormat, RGB_S3TC_DXT1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGB_PVRTC_4BPPV1_Format, RGB_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_PVRTC_2BPPV1_Format, RGB_ETC1_Format, RGB_ETC2_Format, RGBA_ETC2_EAC_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_10x10_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_BPTC_Format, RED_RGTC1_Format, SIGNED_RED_RGTC1_Format, RED_GREEN_RGTC2_Format, SIGNED_RED_GREEN_RGTC2_Format, RepeatWrapping, ClampToEdgeWrapping, MirroredRepeatWrapping, NearestFilter, NearestMipmapNearestFilter, NeverCompare, AlwaysCompare, LessEqualCompare, EqualCompare, GreaterEqualCompare, GreaterCompare, NotEqualCompare, NotEqualStencilFunc, GreaterStencilFunc, GreaterEqualStencilFunc, EqualStencilFunc, LessEqualStencilFunc, LessStencilFunc, AlwaysStencilFunc, NeverStencilFunc, DecrementWrapStencilOp, IncrementWrapStencilOp, DecrementStencilOp, IncrementStencilOp, InvertStencilOp, ReplaceStencilOp, ZeroStencilOp, KeepStencilOp, MaxEquation, MinEquation, SpotLight, PointLight, DirectionalLight, RectAreaLight, AmbientLight, HemisphereLight, LightProbe, LinearToneMapping, ReinhardToneMapping, CineonToneMapping, ACESFilmicToneMapping, AgXToneMapping, NeutralToneMapping, Group, Loader, FileLoader, MaterialLoader, ObjectLoader } from './three.core.js';
+export { AdditiveAnimationBlendMode, AnimationAction, AnimationClip, AnimationLoader, AnimationMixer, AnimationObjectGroup, AnimationUtils, ArcCurve, ArrowHelper, AttachedBindMode, Audio, AudioAnalyser, AudioContext, AudioListener, AudioLoader, AxesHelper, BasicDepthPacking, BatchedMesh, Bone, BooleanKeyframeTrack, Box2, Box3, Box3Helper, BoxHelper, BufferGeometryLoader, Cache, CameraHelper, CanvasTexture, CapsuleGeometry, CatmullRomCurve3, CircleGeometry, Clock, ColorKeyframeTrack, CompressedArrayTexture, CompressedCubeTexture, CompressedTexture, CompressedTextureLoader, ConeGeometry, ConstantAlphaFactor, ConstantColorFactor, Controls, CubeTextureLoader, CubicBezierCurve, CubicBezierCurve3, CubicInterpolant, CullFaceFrontBack, Curve, CurvePath, CustomToneMapping, CylinderGeometry, Cylindrical, Data3DTexture, DataTextureLoader, DataUtils, DefaultLoadingManager, DetachedBindMode, DirectionalLightHelper, DiscreteInterpolant, DodecahedronGeometry, DynamicCopyUsage, DynamicReadUsage, EdgesGeometry, EllipseCurve, ExtrudeGeometry, Fog, FogExp2, GLBufferAttribute, GLSL1, GLSL3, GridHelper, HemisphereLightHelper, IcosahedronGeometry, ImageBitmapLoader, ImageLoader, ImageUtils, InstancedBufferGeometry, InstancedMesh, Int16BufferAttribute, Int32BufferAttribute, Int8BufferAttribute, Interpolant, InterpolateDiscrete, InterpolateLinear, InterpolateSmooth, KeyframeTrack, LOD, LatheGeometry, Layers, Light, Line, Line3, LineCurve, LineCurve3, LineLoop, LineSegments, LinearInterpolant, LinearMipMapNearestFilter, LinearTransfer, LoaderUtils, LoadingManager, LoopOnce, LoopPingPong, LoopRepeat, MOUSE, MeshDepthMaterial, MeshDistanceMaterial, NearestMipMapLinearFilter, NearestMipMapNearestFilter, NormalAnimationBlendMode, NumberKeyframeTrack, OctahedronGeometry, OneMinusConstantAlphaFactor, OneMinusConstantColorFactor, PCFSoftShadowMap, Path, PlaneGeometry, PlaneHelper, PointLightHelper, Points, PolarGridHelper, PolyhedronGeometry, PositionalAudio, PropertyBinding, PropertyMixer, QuadraticBezierCurve, QuadraticBezierCurve3, Quaternion, QuaternionKeyframeTrack, QuaternionLinearInterpolant, RGBADepthPacking, RGBDepthPacking, RGB_BPTC_SIGNED_Format, RGB_BPTC_UNSIGNED_Format, RGDepthPacking, RawShaderMaterial, Ray, Raycaster, RenderTarget3D, RenderTargetArray, RingGeometry, ShaderMaterial, Shape, ShapeGeometry, ShapePath, ShapeUtils, Skeleton, SkeletonHelper, SkinnedMesh, Source, Sphere, Spherical, SphericalHarmonics3, SplineCurve, SpotLightHelper, Sprite, StaticCopyUsage, StaticReadUsage, StereoCamera, StreamCopyUsage, StreamDrawUsage, StreamReadUsage, StringKeyframeTrack, TOUCH, TetrahedronGeometry, TextureLoader, TextureUtils, TimestampQuery, TorusGeometry, TorusKnotGeometry, Triangle, TriangleFanDrawMode, TriangleStripDrawMode, TrianglesDrawMode, TubeGeometry, Uint8BufferAttribute, Uint8ClampedBufferAttribute, Uniform, UniformsGroup, VectorKeyframeTrack, VideoFrameTexture, VideoTexture, WebGL3DRenderTarget, WebGLArrayRenderTarget, WebGLRenderTarget, WireframeGeometry, WrapAroundEnding, ZeroCurvatureEnding, ZeroSlopeEnding } from './three.core.js';
 
 const refreshUniforms = [
 	'alphaMap',
@@ -151,6 +151,7 @@ class NodeMaterialObserver {
 			data = {
 				material: this.getMaterialData( material ),
 				geometry: {
+					id: geometry.id,
 					attributes: this.getAttributesData( geometry.attributes ),
 					indexVersion: geometry.index ? geometry.index.version : null,
 					drawRange: { start: geometry.drawRange.start, count: geometry.drawRange.count }
@@ -369,6 +370,13 @@ class NodeMaterialObserver {
 
 		const storedAttributeNames = Object.keys( storedAttributes );
 		const currentAttributeNames = Object.keys( attributes );
+
+		if ( storedGeometryData.id !== geometry.id ) {
+
+			storedGeometryData.id = geometry.id;
+			return false;
+
+		}
 
 		if ( storedAttributeNames.length !== currentAttributeNames.length ) {
 
@@ -730,6 +738,7 @@ function getLengthFromType( type ) {
 	if ( /vec2/.test( type ) ) return 2;
 	if ( /vec3/.test( type ) ) return 3;
 	if ( /vec4/.test( type ) ) return 4;
+	if ( /mat2/.test( type ) ) return 4;
 	if ( /mat3/.test( type ) ) return 9;
 	if ( /mat4/.test( type ) ) return 16;
 
@@ -781,6 +790,10 @@ function getValueType( value ) {
 	} else if ( value.isVector4 === true ) {
 
 		return 'vec4';
+
+	} else if ( value.isMatrix2 === true ) {
+
+		return 'mat2';
 
 	} else if ( value.isMatrix3 === true ) {
 
@@ -839,6 +852,10 @@ function getValueFromType( type, ...params ) {
 	} else if ( last4 === 'vec4' ) {
 
 		return new Vector4( ...params );
+
+	} else if ( last4 === 'mat2' ) {
+
+		return new Matrix2( ...params );
 
 	} else if ( last4 === 'mat3' ) {
 
@@ -1428,6 +1445,19 @@ class Node extends EventDispatcher {
 	}
 
 	/**
+	 * Returns the node member type for the given name.
+	 *
+	 * @param {NodeBuilder} builder - The current node builder.
+	 * @param {String} name - The name of the member.
+	 * @return {String} The type of the node.
+	 */
+	getMemberType( /*uilder, name*/ ) {
+
+		return 'void';
+
+	}
+
+	/**
 	 * Returns the node's type.
 	 *
 	 * @param {NodeBuilder} builder - The current node builder.
@@ -1950,7 +1980,7 @@ class ArrayElementNode extends Node { // @TODO: If extending from TempNode it br
 		const nodeSnippet = this.node.build( builder );
 		const indexSnippet = this.indexNode.build( builder, 'uint' );
 
-		return `${nodeSnippet}[ ${indexSnippet} ]`;
+		return `${ nodeSnippet }[ ${ indexSnippet } ]`;
 
 	}
 
@@ -2121,7 +2151,7 @@ class TempNode extends Node {
 				const nodeVar = builder.getVarFromNode( this, null, type );
 				const propertyName = builder.getPropertyName( nodeVar );
 
-				builder.addLineFlowCode( `${propertyName} = ${snippet}`, this );
+				builder.addLineFlowCode( `${ propertyName } = ${ snippet }`, this );
 
 				nodeData.snippet = snippet;
 				nodeData.propertyName = propertyName;
@@ -2725,6 +2755,8 @@ class InputNode extends Node {
 
 }
 
+const _regNum = /float|u?int/;
+
 /**
  * Class for representing a constant value in the shader.
  *
@@ -2775,7 +2807,78 @@ class ConstNode extends InputNode {
 
 		const type = this.getNodeType( builder );
 
+		if ( _regNum.test( type ) && _regNum.test( output ) ) {
+
+			return builder.generateConst( output, this.value );
+
+		}
+
 		return builder.format( this.generateConst( builder ), type, output );
+
+	}
+
+}
+
+/**
+ * Base class for representing member access on an object-like
+ * node data structures.
+ *
+ * @augments Node
+ */
+class MemberNode extends Node {
+
+	static get type() {
+
+		return 'MemberNode';
+
+	}
+
+	/**
+	 * Constructs an array element node.
+	 *
+	 * @param {Node} node - The array-like node.
+	 * @param {String} property - The property name.
+	 */
+	constructor( node, property ) {
+
+		super();
+
+		/**
+		 * The array-like node.
+		 *
+		 * @type {Node}
+		 */
+		this.node = node;
+
+		/**
+		 * The property name.
+		 *
+		 * @type {Node}
+		 */
+		this.property = property;
+
+		/**
+		 * This flag can be used for type testing.
+		 *
+		 * @type {Boolean}
+		 * @readonly
+		 * @default true
+		 */
+		this.isMemberNode = true;
+
+	}
+
+	getNodeType( builder ) {
+
+		return this.node.getMemberType( builder, this.property );
+
+	}
+
+	generate( builder ) {
+
+		const propertyName = this.node.build( builder );
+
+		return propertyName + '.' + this.property;
 
 	}
 
@@ -2884,6 +2987,12 @@ const shaderNodeHandler = {
 				// accessing array
 
 				return nodeObject( new ArrayElementNode( nodeObj, new ConstNode( Number( prop ), 'uint' ) ) );
+
+			} else if ( /^get$/.test( prop ) === true ) {
+
+				// accessing properties
+
+				return ( value ) => nodeObject( new MemberNode( nodeObj, value ) );
 
 			}
 
@@ -3031,6 +3140,12 @@ class ShaderCallNodeInternal extends Node {
 	getNodeType( builder ) {
 
 		return this.shaderNode.nodeType || this.getOutputNode( builder ).getNodeType( builder );
+
+	}
+
+	getMemberType( builder, name ) {
+
+		return this.getOutputNode( builder ).getMemberType( builder, name );
 
 	}
 
@@ -3432,6 +3547,127 @@ const split = ( node, channels ) => nodeObject( new SplitNode( nodeObject( node 
 
 addMethodChaining( 'element', element );
 addMethodChaining( 'convert', convert );
+
+/** @module ArrayNode **/
+
+/**
+ * ArrayNode represents a collection of nodes, typically created using the {@link module:TSL~array} function.
+ * ```js
+ * const colors = array( [
+ * 	vec3( 1, 0, 0 ),
+ * 	vec3( 0, 1, 0 ),
+ * 	vec3( 0, 0, 1 )
+ * ] );
+ *
+ * const redColor = tintColors.element( 0 );
+ *
+ * @augments Node
+ */
+class ArrayNode extends TempNode {
+
+	static get type() {
+
+		return 'ArrayNode';
+
+	}
+
+	/**
+	 * Constructs a new array node.
+	 *
+	 * @param {String} [nodeType] - The data type of the elements.
+	 * @param {Number} [count] - Size of the array.
+	 * @param {Array<Node>?} [values=null] - Array default values.
+	 */
+	constructor( nodeType, count, values = null ) {
+
+		super( nodeType );
+
+		/**
+		 * Array size.
+		 *
+		 * @type {Array<Node>}
+		 */
+		this.count = count;
+
+		/**
+		 * Array default values.
+		 *
+		 * @type {Array<Node>}
+		 */
+		this.values = values;
+
+		/**
+		 * This flag can be used for type testing.
+		 *
+		 * @type {Boolean}
+		 * @readonly
+		 * @default true
+		 */
+		this.isArrayNode = true;
+
+	}
+
+	getNodeType( builder ) {
+
+		if ( this.nodeType === null ) {
+
+			this.nodeType = this.values[ 0 ].getNodeType( builder );
+
+		}
+
+		return this.nodeType;
+
+	}
+
+	getElementType( builder ) {
+
+		return this.getNodeType( builder );
+
+	}
+
+	generate( builder ) {
+
+		const type = this.getNodeType( builder );
+
+		return builder.generateArray( type, this.count, this.values );
+
+	}
+
+}
+
+/**
+ * TSL function for creating an array node.
+ *
+ * @function
+ * @param {String|Array<Node>} nodeTypeOrValues - A string representing the element type (e.g., 'vec3')
+ * or an array containing the default values (e.g., [ vec3() ]).
+ * @param {Number?} [count] - Size of the array.
+ * @returns {ArrayNode}
+ */
+const array = ( ...params ) => {
+
+	let node;
+
+	if ( params.length === 1 ) {
+
+		const values = params[ 0 ];
+
+		node = new ArrayNode( null, values.length, values );
+
+	} else {
+
+		const nodeType = params[ 0 ];
+		const count = params[ 1 ];
+
+		node = new ArrayNode( nodeType, count );
+
+	}
+
+	return nodeObject( node );
+
+};
+
+addMethodChaining( 'toArray', ( node, count ) => array( Array( count ).fill( node ) ) );
 
 /** @module UniformGroupNode **/
 
@@ -4485,23 +4721,39 @@ class OperatorNode extends TempNode {
 
 		} else {
 
-			if ( typeA === 'float' && builder.isMatrix( typeB ) ) {
+			// Handle matrix operations
+			if ( builder.isMatrix( typeA ) ) {
 
-				return typeB;
+				if ( typeB === 'float' ) {
 
-			} else if ( builder.isMatrix( typeA ) && builder.isVector( typeB ) ) {
+					return typeA; // matrix * scalar = matrix
 
-				// matrix x vector
+				} else if ( builder.isVector( typeB ) ) {
 
-				return builder.getVectorFromMatrix( typeA );
+					return builder.getVectorFromMatrix( typeA ); // matrix * vector
 
-			} else if ( builder.isVector( typeA ) && builder.isMatrix( typeB ) ) {
+				} else if ( builder.isMatrix( typeB ) ) {
 
-				// vector x matrix
+					return typeA; // matrix * matrix
 
-				return builder.getVectorFromMatrix( typeB );
+				}
 
-			} else if ( builder.getTypeLength( typeB ) > builder.getTypeLength( typeA ) ) {
+			} else if ( builder.isMatrix( typeB ) ) {
+
+				if ( typeA === 'float' ) {
+
+					return typeB; // scalar * matrix = matrix
+
+				} else if ( builder.isVector( typeA ) ) {
+
+					return builder.getVectorFromMatrix( typeB ); // vector * matrix
+
+				}
+
+			}
+
+			// Handle non-matrix cases
+			if ( builder.getTypeLength( typeB ) > builder.getTypeLength( typeA ) ) {
 
 				// anytype x anytype: use the greater length vector
 
@@ -4549,17 +4801,41 @@ class OperatorNode extends TempNode {
 				typeA = type;
 				typeB = builder.changeComponentType( typeB, 'uint' );
 
-			} else if ( builder.isMatrix( typeA ) && builder.isVector( typeB ) ) {
+			} else if ( builder.isMatrix( typeA ) ) {
 
-				// matrix x vector
+				if ( typeB === 'float' ) {
 
-				typeB = builder.getVectorFromMatrix( typeA );
+					// Keep matrix type for typeA, but ensure typeB stays float
+					typeB = 'float';
 
-			} else if ( builder.isVector( typeA ) && builder.isMatrix( typeB ) ) {
+				} else if ( builder.isVector( typeB ) ) {
 
-				// vector x matrix
+					// matrix x vector
+					typeB = builder.getVectorFromMatrix( typeA );
 
-				typeA = builder.getVectorFromMatrix( typeB );
+				} else if ( builder.isMatrix( typeB ) ) ; else {
+
+					typeA = typeB = type;
+
+				}
+
+			} else if ( builder.isMatrix( typeB ) ) {
+
+				if ( typeA === 'float' ) {
+
+					// Keep matrix type for typeB, but ensure typeA stays float
+					typeA = 'float';
+
+				} else if ( builder.isVector( typeA ) ) {
+
+					// vector x matrix
+					typeA = builder.getVectorFromMatrix( typeB );
+
+				} else {
+
+					typeA = typeB = type;
+
+				}
 
 			} else {
 
@@ -4641,7 +4917,20 @@ class OperatorNode extends TempNode {
 
 			} else {
 
-				return builder.format( `( ${ a } ${ op } ${ b } )`, type, output );
+				// Handle matrix operations
+				if ( builder.isMatrix( typeA ) && typeB === 'float' ) {
+
+					return builder.format( `( ${ b } ${ op } ${ a } )`, type, output );
+
+				} else if ( typeA === 'float' && builder.isMatrix( typeB ) ) {
+
+					return builder.format( `${ a } ${ op } ${ b }`, type, output );
+
+				} else {
+
+					return builder.format( `( ${ a } ${ op } ${ b } )`, type, output );
+
+				}
 
 			}
 
@@ -4653,7 +4942,15 @@ class OperatorNode extends TempNode {
 
 			} else {
 
-				return builder.format( `${ a } ${ op } ${ b }`, type, output );
+				if ( builder.isMatrix( typeA ) && typeB === 'float' ) {
+
+					return builder.format( `${ b } ${ op } ${ a }`, type, output );
+
+				} else {
+
+					return builder.format( `${ a } ${ op } ${ b }`, type, output );
+
+				}
 
 			}
 
@@ -6155,7 +6452,7 @@ const select = /*@__PURE__*/ nodeProxy( ConditionalNode );
 
 addMethodChaining( 'select', select );
 
-// deprecated
+// Deprecated
 
 /**
  * @function
@@ -6392,6 +6689,18 @@ class VarNode extends Node {
 
 	}
 
+	getMemberType( builder, name ) {
+
+		return this.node.getMemberType( builder, name );
+
+	}
+
+	getElementType( builder ) {
+
+		return this.node.getElementType( builder );
+
+	}
+
 	getNodeType( builder ) {
 
 		return this.node.getNodeType( builder );
@@ -6427,8 +6736,6 @@ class VarNode extends Node {
 
 		if ( shouldTreatAsReadOnly ) {
 
-			const type = builder.getType( nodeVar.type );
-
 			if ( isWebGPUBackend ) {
 
 				declarationPrefix = isDeterministic
@@ -6437,7 +6744,9 @@ class VarNode extends Node {
 
 			} else {
 
-				declarationPrefix = `const ${ type } ${ propertyName }`;
+				const count = builder.getArrayCount( node );
+
+				declarationPrefix = `const ${ builder.getVar( nodeVar.type, propertyName, count ) }`;
 
 			}
 
@@ -6512,7 +6821,7 @@ addMethodChaining( 'temp', temp );
  * existing nodes like the following:
  *
  * ```js
- * const positionLocal = positionGeometry.varying( 'vPositionLocal' );
+ * const positionLocal = positionGeometry.toVarying( 'vPositionLocal' );
  * ```
  *
  * @augments Node
@@ -6686,8 +6995,24 @@ const varying = /*@__PURE__*/ nodeProxy( VaryingNode );
  */
 const vertexStage = ( node ) => varying( node );
 
-addMethodChaining( 'varying', varying );
-addMethodChaining( 'vertexStage', vertexStage );
+addMethodChaining( 'toVarying', varying );
+addMethodChaining( 'toVertexStage', vertexStage );
+
+// Deprecated
+
+addMethodChaining( 'varying', ( ...params ) => { // @deprecated, r173
+
+	console.warn( 'TSL.VaryingNode: .varying() has been renamed to .toVarying().' );
+	return varying( ...params );
+
+} );
+
+addMethodChaining( 'vertexStage', ( ...params ) => { // @deprecated, r173
+
+	console.warn( 'TSL.VaryingNode: .vertexStage() has been renamed to .toVertexStage().' );
+	return varying( ...params );
+
+} );
 
 /** @module ColorSpaceFunctions **/
 
@@ -10042,7 +10367,7 @@ const uniforms = ( values, nodeType ) => { // @deprecated, r168
  *
  * @type {UniformNode<uint>}
  */
-const cameraIndex = /*@__PURE__*/ uniform( 'uint' ).setGroup( sharedUniformGroup( 'cameraIndex' ) ).vertexStage();
+const cameraIndex = /*@__PURE__*/ uniform( 0, 'uint' ).setGroup( sharedUniformGroup( 'cameraIndex' ) ).toVarying( 'v_cameraIndex' );
 
 /**
  * TSL object that represents the `near` value of the camera used for the current render.
@@ -10067,7 +10392,7 @@ const cameraProjectionMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 
 	let cameraProjectionMatrix;
 
-	if ( camera.isArrayCamera ) {
+	if ( camera.isArrayCamera && camera.cameras.length > 0 ) {
 
 		const matrices = [];
 
@@ -10107,7 +10432,7 @@ const cameraViewMatrix = /*@__PURE__*/ ( Fn( ( { camera } ) => {
 
 	let cameraViewMatrix;
 
-	if ( camera.isArrayCamera ) {
+	if ( camera.isArrayCamera && camera.cameras.length > 0 ) {
 
 		const matrices = [];
 
@@ -10551,7 +10876,7 @@ const positionGeometry = /*@__PURE__*/ attribute( 'position', 'vec3' );
  *
  * @type {AttributeNode<vec3>}
  */
-const positionLocal = /*@__PURE__*/ positionGeometry.varying( 'positionLocal' );
+const positionLocal = /*@__PURE__*/ positionGeometry.toVarying( 'positionLocal' );
 
 /**
  * TSL object that represents the previous vertex position in local space of the current rendered object.
@@ -10559,21 +10884,21 @@ const positionLocal = /*@__PURE__*/ positionGeometry.varying( 'positionLocal' );
  *
  * @type {AttributeNode<vec3>}
  */
-const positionPrevious = /*@__PURE__*/ positionGeometry.varying( 'positionPrevious' );
+const positionPrevious = /*@__PURE__*/ positionGeometry.toVarying( 'positionPrevious' );
 
 /**
  * TSL object that represents the vertex position in world space of the current rendered object.
  *
  * @type {VaryingNode<vec3>}
  */
-const positionWorld = /*@__PURE__*/ modelWorldMatrix.mul( positionLocal ).xyz.varying( 'v_positionWorld' ).context( { needsPositionReassign: true } );
+const positionWorld = /*@__PURE__*/ modelWorldMatrix.mul( positionLocal ).xyz.toVarying( 'v_positionWorld' ).context( { needsPositionReassign: true } );
 
 /**
  * TSL object that represents the position world direction of the current rendered object.
  *
  * @type {Node<vec3>}
  */
-const positionWorldDirection = /*@__PURE__*/ positionLocal.transformDirection( modelWorldMatrix ).varying( 'v_positionWorldDirection' ).normalize().toVar( 'positionWorldDirection' ).context( { needsPositionReassign: true } );
+const positionWorldDirection = /*@__PURE__*/ positionLocal.transformDirection( modelWorldMatrix ).toVarying( 'v_positionWorldDirection' ).normalize().toVar( 'positionWorldDirection' ).context( { needsPositionReassign: true } );
 
 /**
  * TSL object that represents the vertex position in view space of the current rendered object.
@@ -10584,14 +10909,14 @@ const positionView = /*@__PURE__*/ ( Fn( ( builder ) => {
 
 	return builder.context.setupPositionView();
 
-}, 'vec3' ).once() )().varying( 'v_positionView' ).context( { needsPositionReassign: true } );
+}, 'vec3' ).once() )().toVarying( 'v_positionView' ).context( { needsPositionReassign: true } );
 
 /**
  * TSL object that represents the position view direction of the current rendered object.
  *
  * @type {VaryingNode<vec3>}
  */
-const positionViewDirection = /*@__PURE__*/ positionView.negate().varying( 'v_positionViewDirection' ).normalize().toVar( 'positionViewDirection' );
+const positionViewDirection = /*@__PURE__*/ positionView.negate().toVarying( 'v_positionViewDirection' ).normalize().toVar( 'positionViewDirection' );
 
 /** @module FrontFacingNode **/
 
@@ -11488,14 +11813,14 @@ const tangentLocal = /*@__PURE__*/ tangentGeometry.xyz.toVar( 'tangentLocal' );
  *
  * @type {Node<vec3>}
  */
-const tangentView = /*@__PURE__*/ modelViewMatrix.mul( vec4( tangentLocal, 0 ) ).xyz.varying( 'v_tangentView' ).normalize().toVar( 'tangentView' );
+const tangentView = /*@__PURE__*/ modelViewMatrix.mul( vec4( tangentLocal, 0 ) ).xyz.toVarying( 'v_tangentView' ).normalize().toVar( 'tangentView' );
 
 /**
  * TSL object that represents the vertex tangent in world space of the current rendered object.
  *
  * @type {Node<vec3>}
  */
-const tangentWorld = /*@__PURE__*/ tangentView.transformDirection( cameraViewMatrix ).varying( 'v_tangentWorld' ).normalize().toVar( 'tangentWorld' );
+const tangentWorld = /*@__PURE__*/ tangentView.transformDirection( cameraViewMatrix ).toVarying( 'v_tangentWorld' ).normalize().toVar( 'tangentWorld' );
 
 /**
  * TSL object that represents the transformed vertex tangent in view space of the current rendered object.
@@ -12583,7 +12908,7 @@ const modelViewProjection = /*@__PURE__*/ ( Fn( ( builder ) => {
 
 	return builder.context.setupModelViewProjection();
 
-}, 'vec4' ).once() )().varying( 'v_modelViewProjection' );
+}, 'vec4' ).once() )().toVarying( 'v_modelViewProjection' );
 
 /** @module IndexNode **/
 
@@ -13065,9 +13390,9 @@ class BatchNode extends Node {
 
 		const getIndirectIndex = Fn( ( [ id ] ) => {
 
-			const size = textureSize( textureLoad( this.batchMesh._indirectTexture ), 0 );
-			const x = int( id ).modInt( int( size ) );
-			const y = int( id ).div( int( size ) );
+			const size = int( textureSize( textureLoad( this.batchMesh._indirectTexture ), 0 ) );
+			const x = int( id ).modInt( size );
+			const y = int( id ).div( size );
 			return textureLoad( this.batchMesh._indirectTexture, ivec2( x, y ) ).x;
 
 		} ).setLayout( {
@@ -13723,7 +14048,7 @@ const Continue = () => expression( 'continue' ).append();
  */
 const Break = () => expression( 'break' ).append();
 
-// deprecated
+// Deprecated
 
 /**
  * @function
@@ -15521,7 +15846,7 @@ class NodeMaterial extends Material {
 		 * material.transparent = true;
 		 *
 		 * // everything behind the object will be monochromatic
-		 * material.backdropNode = viewportSharedTexture().rgb.saturation( 0 );
+		 * material.backdropNode = saturation( viewportSharedTexture().rgb, 0 );
 		 * ```
 		 *
 		 * Backdrop computations are part of the lighting so only lit materials can use this property.
@@ -15844,9 +16169,9 @@ class NodeMaterial extends Material {
 
 		builder.addFlow( 'fragment', builder.removeStack() );
 
-		// < MONITOR >
+		// < OBSERVER >
 
-		builder.monitor = this.setupObserver( builder );
+		builder.observer = this.setupObserver( builder );
 
 	}
 
@@ -19882,7 +20207,7 @@ const blur = /*@__PURE__*/ Fn( ( { n, latitudinal, poleAxis, outputDirection, we
 	axis.assign( normalize( axis ) );
 
 	const gl_FragColor = vec3().toVar();
-	gl_FragColor.addAssign( weights.element( int( 0 ) ).mul( getSample( { theta: 0.0, axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
+	gl_FragColor.addAssign( weights.element( 0 ).mul( getSample( { theta: 0.0, axis, outputDirection, mipInt, envMap, CUBEUV_TEXEL_WIDTH, CUBEUV_TEXEL_HEIGHT, CUBEUV_MAX_MIP } ) ) );
 
 	Loop( { start: int( 1 ), end: n }, ( { i } ) => {
 
@@ -22975,7 +23300,7 @@ class RenderObject {
 	 */
 	getMonitor() {
 
-		return this._monitor || ( this._monitor = this.getNodeBuilderState().monitor );
+		return this._monitor || ( this._monitor = this.getNodeBuilderState().observer );
 
 	}
 
@@ -23384,9 +23709,15 @@ class RenderObject {
 
 		}
 
+		if ( this.camera.isArrayCamera ) {
+
+			cacheKey = hash$1( cacheKey, this.camera.cameras.length );
+
+		}
+
 		if ( this.object.receiveShadow ) {
 
-			cacheKey += 1;
+			cacheKey = hash$1( cacheKey, 1 );
 
 		}
 
@@ -23834,28 +24165,6 @@ class Attributes extends DataMap {
 }
 
 /**
- * Returns `true` if the given array has values that require an Uint32 array type.
- *
- * @private
- * @function
- * @param {Array<Number>} array - The array to test.
- * @return {Boolean} Whether the given array has values that require an Uint32 array type or not.
- */
-function arrayNeedsUint32( array ) {
-
-	// assumes larger values usually on last
-
-	for ( let i = array.length - 1; i >= 0; -- i ) {
-
-		if ( array[ i ] >= 65535 ) return true; // account for PRIMITIVE_RESTART_FIXED_INDEX, #24565
-
-	}
-
-	return false;
-
-}
-
-/**
  * Returns the wireframe version for the given geometry.
  *
  * @private
@@ -24246,9 +24555,7 @@ class Info {
 		 * @property {Number} triangles - The number of rendered triangle primitives of the current frame.
 		 * @property {Number} points - The number of rendered point primitives of the current frame.
 		 * @property {Number} lines - The number of rendered line primitives of the current frame.
-		 * @property {Number} previousFrameCalls - The number of render calls of the previous frame.
 		 * @property {Number} timestamp - The timestamp of the frame when using `renderer.renderAsync()`.
-		 * @property {Number} timestampCalls - The number of render calls using `renderer.renderAsync()`.
 		 */
 		this.render = {
 			calls: 0,
@@ -24258,8 +24565,6 @@ class Info {
 			points: 0,
 			lines: 0,
 			timestamp: 0,
-			previousFrameCalls: 0,
-			timestampCalls: 0
 		};
 
 		/**
@@ -24269,16 +24574,12 @@ class Info {
 		 * @readonly
 		 * @property {Number} calls - The number of compute calls since the app has been started.
 		 * @property {Number} frameCalls - The number of compute calls of the current frame.
-		 * @property {Number} previousFrameCalls - The number of compute calls of the previous frame.
 		 * @property {Number} timestamp - The timestamp of the frame when using `renderer.computeAsync()`.
-		 * @property {Number} timestampCalls - The number of render calls using `renderer.computeAsync()`.
 		 */
 		this.compute = {
 			calls: 0,
 			frameCalls: 0,
-			timestamp: 0,
-			previousFrameCalls: 0,
-			timestampCalls: 0
+			timestamp: 0
 		};
 
 		/**
@@ -24332,45 +24633,9 @@ class Info {
 	}
 
 	/**
-	 * Used by async render methods to updated timestamp metrics.
-	 *
-	 * @param {('render'|'compute')} type - The type of render call.
-	 * @param {Number} time - The duration of the compute/render call in milliseconds.
-	 */
-	updateTimestamp( type, time ) {
-
-		if ( this[ type ].timestampCalls === 0 ) {
-
-			this[ type ].timestamp = 0;
-
-		}
-
-
-		this[ type ].timestamp += time;
-
-		this[ type ].timestampCalls ++;
-
-
-		if ( this[ type ].timestampCalls >= this[ type ].previousFrameCalls ) {
-
-			this[ type ].timestampCalls = 0;
-
-		}
-
-
-	}
-
-	/**
 	 * Resets frame related metrics.
 	 */
 	reset() {
-
-		const previousRenderFrameCalls = this.render.frameCalls;
-		this.render.previousFrameCalls = previousRenderFrameCalls;
-
-		const previousComputeFrameCalls = this.compute.frameCalls;
-		this.compute.previousFrameCalls = previousComputeFrameCalls;
-
 
 		this.render.drawCalls = 0;
 		this.render.frameCalls = 0;
@@ -26322,21 +26587,28 @@ class Textures extends DataMap {
 
 		//
 
+
 		const options = { sampleCount };
 
-		for ( let i = 0; i < textures.length; i ++ ) {
+		// XR render targets require no texture updates
 
-			const texture = textures[ i ];
+		if ( renderTarget.isXRRenderTarget !== true ) {
 
-			if ( textureNeedsUpdate ) texture.needsUpdate = true;
+			for ( let i = 0; i < textures.length; i ++ ) {
 
-			this.updateTexture( texture, options );
+				const texture = textures[ i ];
 
-		}
+				if ( textureNeedsUpdate ) texture.needsUpdate = true;
 
-		if ( depthTexture ) {
+				this.updateTexture( texture, options );
 
-			this.updateTexture( depthTexture, options );
+			}
+
+			if ( depthTexture ) {
+
+				this.updateTexture( depthTexture, options );
+
+			}
 
 		}
 
@@ -26854,6 +27126,12 @@ class StackNode extends Node {
 
 	}
 
+	getMemberType( builder, name ) {
+
+		return this.outputNode ? this.outputNode.getMemberType( builder, name ) : 'void';
+
+	}
+
 	/**
 	 * Adds a node to this stack.
 	 *
@@ -26935,7 +27213,7 @@ class StackNode extends Node {
 
 	}
 
-	// deprecated
+	// Deprecated
 
 	/**
 	 * @function
@@ -26974,6 +27252,244 @@ class StackNode extends Node {
  * @returns {StackNode}
  */
 const stack = /*@__PURE__*/ nodeProxy( StackNode );
+
+/** @module StructTypeNode **/
+
+/**
+ * Generates a layout for struct members.
+ * This function takes an object representing struct members and returns an array of member layouts.
+ * Each member layout includes the member's name, type, and whether it is atomic.
+ *
+ * @param {Object.<string, string|Object>} members - An object where keys are member names and values are either types (as strings) or objects with type and atomic properties.
+ * @returns {Array.<{name: string, type: string, atomic: boolean}>} An array of member layouts.
+ */
+function getMembersLayout( members ) {
+
+	return Object.entries( members ).map( ( [ name, value ] ) => {
+
+		if ( typeof value === 'string' ) {
+
+			return { name, type: value, atomic: false };
+
+		}
+
+		return { name, type: value.type, atomic: value.atomic || false };
+
+	} );
+
+}
+
+/**
+ * Represents a struct type node in the node-based system.
+ * This class is used to define and manage the layout and types of struct members.
+ * It extends the base Node class and provides methods to get the length of the struct,
+ * retrieve member types, and generate the struct type for a builder.
+ *
+ * @augments Node
+ */
+class StructTypeNode extends Node {
+
+	static get type() {
+
+		return 'StructTypeNode';
+
+	}
+
+	/**
+	 * Creates an instance of StructTypeNode.
+	 *
+	 * @param {Object} membersLayout - The layout of the members for the struct.
+	 * @param {string} [name=null] - The optional name of the struct.
+	 */
+	constructor( membersLayout, name = null ) {
+
+		super( 'struct' );
+
+		/**
+		 * The layout of the members for the struct
+		 *
+		 * @type {Array.<{name: string, type: string, atomic: boolean}>}
+		 */
+		this.membersLayout = getMembersLayout( membersLayout );
+
+		/**
+		 * The name of the struct.
+		 *
+		 * @type {String}
+		 * @default null
+		 */
+		this.name = name;
+
+		/**
+		 * This flag can be used for type testing.
+		 *
+		 * @type {Boolean}
+		 * @readonly
+		 * @default true
+		 */
+		this.isStructLayoutNode = true;
+
+	}
+
+	/**
+	 * Returns the length of the struct.
+	 * The length is calculated by summing the lengths of the struct's members.
+	 *
+	 * @returns {Number} The length of the struct.
+	 */
+	getLength() {
+
+		let length = 0;
+
+		for ( const member of this.membersLayout ) {
+
+			length += getLengthFromType( member.type );
+
+		}
+
+		return length;
+
+	}
+
+	getMemberType( builder, name ) {
+
+		const member = this.membersLayout.find( m => m.name === name );
+
+		return member ? member.type : 'void';
+
+	}
+
+	getNodeType( builder ) {
+
+		const structType = builder.getStructTypeFromNode( this, this.membersLayout, this.name );
+
+		return structType.name;
+
+	}
+
+	generate( builder ) {
+
+		return this.getNodeType( builder );
+
+	}
+
+}
+
+/** @module StructNode **/
+
+/**
+ * StructNode allows to create custom structures with multiple members.
+ * This can also be used to define structures in attribute and uniform data.
+ *
+ * ```js
+ * // Define a custom struct
+ * const BoundingBox = struct( { min: 'vec3', max: 'vec3' } );
+ *
+ * // Create a new instance of the struct
+ * const bb = BoundingBox( vec3( 0 ), vec3( 1 ) ); // style 1
+ * const bb = BoundingBox( { min: vec3( 0 ), max: vec3( 1 ) } ); // style 2
+ *
+ * // Access the struct members
+ * const min = bb.get( 'min' );
+ *
+ * // Assign a new value to a member
+ * min.assign( vec3() );
+ * ```
+ * @augments Node
+ */
+class StructNode extends Node {
+
+	static get type() {
+
+		return 'StructNode';
+
+	}
+
+	constructor( structLayoutNode, values ) {
+
+		super( 'vec3' );
+
+		this.structLayoutNode = structLayoutNode;
+		this.values = values;
+
+		this.isStructNode = true;
+
+	}
+
+	getNodeType( builder ) {
+
+		return this.structLayoutNode.getNodeType( builder );
+
+	}
+
+	getMemberType( builder, name ) {
+
+		return this.structLayoutNode.getMemberType( builder, name );
+
+	}
+
+	generate( builder ) {
+
+		const nodeVar = builder.getVarFromNode( this );
+		const structType = nodeVar.type;
+		const propertyName = builder.getPropertyName( nodeVar );
+
+		builder.addLineFlowCode( `${ propertyName } = ${ builder.generateStruct( structType, this.structLayoutNode.membersLayout, this.values ) }`, this );
+
+		return nodeVar.name;
+
+	}
+
+}
+
+/**
+ * TSL function for creating a struct node.
+ *
+ * @function
+ * @param {Object} membersLayout - The layout of the struct members.
+ * @param {string} [name=null] - The name of the struct.
+ * @returns {Function} The struct function.
+ */
+const struct = ( membersLayout, name = null ) => {
+
+	const structLayout = new StructTypeNode( membersLayout, name );
+
+	const struct = ( ...params ) => {
+
+		let values = null;
+
+		if ( params.length > 0 ) {
+
+			if ( params[ 0 ].isNode ) {
+
+				values = {};
+
+				const names = Object.keys( membersLayout );
+
+				for ( let i = 0; i < params.length; i ++ ) {
+
+					values[ names[ i ] ] = params[ i ];
+
+				}
+
+			} else {
+
+				values = params[ 0 ];
+
+			}
+
+		}
+
+		return nodeObject( new StructNode( structLayout, values ) );
+
+	};
+
+	struct.layout = structLayout;
+	struct.isStruct = true;
+
+	return struct;
+
+};
 
 /** @module OutputStructNode **/
 
@@ -27018,24 +27534,34 @@ class OutputStructNode extends Node {
 
 	}
 
-	setup( builder ) {
+	getNodeType( builder ) {
 
-		super.setup( builder );
+		const properties = builder.getNodeProperties( this );
 
-		const members = this.members;
-		const types = [];
+		if ( properties.membersLayout === undefined ) {
 
-		for ( let i = 0; i < members.length; i ++ ) {
+			const members = this.members;
+			const membersLayout = [];
 
-			types.push( members[ i ].getNodeType( builder ) );
+			for ( let i = 0; i < members.length; i ++ ) {
+
+				const name = 'm' + i;
+				const type = members[ i ].getNodeType( builder );
+
+				membersLayout.push( { name, type, index: i } );
+
+			}
+
+			properties.membersLayout = membersLayout;
+			properties.structType = builder.getOutputStructTypeFromNode( this, properties.membersLayout );
 
 		}
 
-		this.nodeType = builder.getStructTypeFromNode( this, types ).name;
+		return properties.structType.name;
 
 	}
 
-	generate( builder, output ) {
+	generate( builder ) {
 
 		const propertyName = builder.getOutputStructName();
 		const members = this.members;
@@ -27044,7 +27570,7 @@ class OutputStructNode extends Node {
 
 		for ( let i = 0; i < members.length; i ++ ) {
 
-			const snippet = members[ i ].build( builder, output );
+			const snippet = members[ i ].build( builder );
 
 			builder.addLineFlowCode( `${ structPrefix }m${ i } = ${ snippet }`, this );
 
@@ -29020,6 +29546,20 @@ class StorageArrayElementNode extends ArrayElementNode {
 
 	}
 
+	getMemberType( builder, name ) {
+
+		const structTypeNode = this.storageBufferNode.structTypeNode;
+
+		if ( structTypeNode ) {
+
+			return structTypeNode.getMemberType( builder, name );
+
+		}
+
+		return 'void';
+
+	}
+
 	setup( builder ) {
 
 		if ( builder.isAvailable( 'storageBuffer' ) === false ) {
@@ -29131,19 +29671,30 @@ class StorageBufferNode extends BufferNode {
 	 * Constructs a new storage buffer node.
 	 *
 	 * @param {StorageBufferAttribute|StorageInstancedBufferAttribute|BufferAttribute} value - The buffer data.
-	 * @param {String?} [bufferType=null] - The buffer type (e.g. `'vec3'`).
+	 * @param {(String|Struct)?} [bufferType=null] - The buffer type (e.g. `'vec3'`).
 	 * @param {Number} [bufferCount=0] - The buffer count.
 	 */
 	constructor( value, bufferType = null, bufferCount = 0 ) {
 
-		if ( bufferType === null && ( value.isStorageBufferAttribute || value.isStorageInstancedBufferAttribute ) ) {
+		let nodeType, structTypeNode = null;
 
-			bufferType = getTypeFromLength( value.itemSize );
+		if ( bufferType && bufferType.isStruct ) {
+
+			nodeType = 'struct';
+			structTypeNode = bufferType.layout;
+
+		} else if ( bufferType === null && ( value.isStorageBufferAttribute || value.isStorageInstancedBufferAttribute ) ) {
+
+			nodeType = getTypeFromLength( value.itemSize );
 			bufferCount = value.count;
+
+		} else {
+
+			nodeType = bufferType;
 
 		}
 
-		super( value, bufferType, bufferCount );
+		super( value, nodeType, bufferCount );
 
 		/**
 		 * This flag can be used for type testing.
@@ -29153,6 +29704,15 @@ class StorageBufferNode extends BufferNode {
 		 * @default true
 		 */
 		this.isStorageBufferNode = true;
+
+
+		/**
+		 * The buffer struct type.
+		 *
+		 * @type {structTypeNode?}
+		 * @default null
+		 */
+		this.structTypeNode = structTypeNode;
 
 		/**
 		 * The access type of the texture node.
@@ -29374,6 +29934,12 @@ class StorageBufferNode extends BufferNode {
 	 */
 	getNodeType( builder ) {
 
+		if ( this.structTypeNode !== null ) {
+
+			return this.structTypeNode.getNodeType( builder );
+
+		}
+
 		if ( builder.isAvailable( 'storageBuffer' ) || builder.isAvailable( 'indirectStorageBuffer' ) ) {
 
 			return super.getNodeType( builder );
@@ -29393,6 +29959,8 @@ class StorageBufferNode extends BufferNode {
 	 * @return {String} The generated code snippet.
 	 */
 	generate( builder ) {
+
+		if ( this.structTypeNode !== null ) this.structTypeNode.build( builder );
 
 		if ( builder.isAvailable( 'storageBuffer' ) || builder.isAvailable( 'indirectStorageBuffer' ) ) {
 
@@ -29417,7 +29985,7 @@ class StorageBufferNode extends BufferNode {
  *
  * @function
  * @param {StorageBufferAttribute|StorageInstancedBufferAttribute|BufferAttribute} value - The buffer data.
- * @param {String?} [type=null] - The buffer type (e.g. `'vec3'`).
+ * @param {(String|Struct)?} [type=null] - The buffer type (e.g. `'vec3'`).
  * @param {Number} [count=0] - The buffer count.
  * @returns {StorageBufferNode}
  */
@@ -29446,14 +30014,25 @@ const storageObject = ( value, type, count ) => { // @deprecated, r171
  * TSL function for creating a storage buffer node with a configured `StorageBufferAttribute`.
  *
  * @function
- * @param {Number} count - The data count.
- * @param {String} [type='float'] - The data type.
+ * @param {Number|TypedArray} count - The data count. It is also valid to pass a typed array as an argument.
+ * @param {String|Struct} [type='float'] - The data type.
  * @returns {StorageBufferNode}
  */
 const attributeArray = ( count, type = 'float' ) => {
 
-	const itemSize = getLengthFromType( type );
-	const typedArray = getTypedArrayFromType( type );
+	let itemSize, typedArray;
+
+	if ( type.isStruct === true ) {
+
+		itemSize = type.layout.getLength();
+		typedArray = getTypedArrayFromType( 'float' );
+
+	} else {
+
+		itemSize = getLengthFromType( type );
+		typedArray = getTypedArrayFromType( type );
+
+	}
 
 	const buffer = new StorageBufferAttribute( count, itemSize, typedArray );
 	const node = storage( buffer, type, count );
@@ -29466,14 +30045,25 @@ const attributeArray = ( count, type = 'float' ) => {
  * TSL function for creating a storage buffer node with a configured `StorageInstancedBufferAttribute`.
  *
  * @function
- * @param {Number} count - The data count.
- * @param {String} [type='float'] - The data type.
+ * @param {Number|TypedArray} count - The data count. It is also valid to pass a typed array as an argument.
+ * @param {String|Struct} [type='float'] - The data type.
  * @returns {StorageBufferNode}
  */
 const instancedArray = ( count, type = 'float' ) => {
 
-	const itemSize = getLengthFromType( type );
-	const typedArray = getTypedArrayFromType( type );
+	let itemSize, typedArray;
+
+	if ( type.isStruct === true ) {
+
+		itemSize = type.layout.getLength();
+		typedArray = getTypedArrayFromType( 'float' );
+
+	} else {
+
+		itemSize = getLengthFromType( type );
+		typedArray = getTypedArrayFromType( type );
+
+	}
 
 	const buffer = new StorageInstancedBufferAttribute( count, itemSize, typedArray );
 	const node = storage( buffer, type, count );
@@ -30412,7 +31002,7 @@ const blendColor = /*@__PURE__*/ Fn( ( [ base, blend ] ) => {
 	]
 } );
 
-// deprecated
+// Deprecated
 
 /**
  * @function
@@ -31199,12 +31789,14 @@ class PassNode extends TempNode {
 
 		this.renderTarget.samples = this.options.samples === undefined ? renderer.samples : this.options.samples;
 
-		// Disable MSAA for WebGL backend for now
+		// TODO: Disable MSAA for WebGL backend for now
 		if ( renderer.backend.isWebGLBackend === true ) {
 
 			this.renderTarget.samples = 0;
 
 		}
+
+		this.renderTarget.texture.type = renderer.getColorBufferType();
 
 		return this.scope === PassNode.COLOR ? this.getTextureNode() : this.getLinearDepthNode();
 
@@ -33911,7 +34503,13 @@ class AtomicFunctionNode extends TempNode {
 		const params = [];
 
 		params.push( `&${ a.build( builder, inputType ) }` );
-		params.push( b.build( builder, inputType ) );
+
+		if ( b !== null ) {
+
+			params.push( b.build( builder, inputType ) );
+
+
+		}
 
 		const methodSnippet = `${ builder.getMethod( method, type ) }( ${params.join( ', ' )} )`;
 
@@ -33971,6 +34569,16 @@ const atomicFunc = ( method, pointerNode, valueNode, storeNode = null ) => {
 	return node;
 
 };
+
+/**
+ * Loads the value stored in the atomic variable.
+ *
+ * @function
+ * @param {Node} pointerNode - An atomic variable or element of an atomic buffer.
+ * @param {Node?} [storeNode=null] - A variable storing the return value of an atomic operation, typically the value of the atomic variable before the operation.
+ * @returns {AtomicFunctionNode}
+ */
+const atomicLoad = ( pointerNode, storeNode = null ) => atomicFunc( AtomicFunctionNode.ATOMIC_LOAD, pointerNode, null, storeNode );
 
 /**
  * Stores a value in the atomic variable.
@@ -37965,6 +38573,7 @@ var TSL = /*#__PURE__*/Object.freeze({
 	anisotropyT: anisotropyT,
 	any: any,
 	append: append,
+	array: array,
 	arrayBuffer: arrayBuffer,
 	asin: asin,
 	assign: assign,
@@ -37973,6 +38582,7 @@ var TSL = /*#__PURE__*/Object.freeze({
 	atomicAdd: atomicAdd,
 	atomicAnd: atomicAnd,
 	atomicFunc: atomicFunc,
+	atomicLoad: atomicLoad,
 	atomicMax: atomicMax,
 	atomicMin: atomicMin,
 	atomicOr: atomicOr,
@@ -38365,6 +38975,7 @@ var TSL = /*#__PURE__*/Object.freeze({
 	storageObject: storageObject,
 	storageTexture: storageTexture,
 	string: string,
+	struct: struct,
 	sub: sub,
 	subgroupIndex: subgroupIndex,
 	subgroupSize: subgroupSize,
@@ -38591,6 +39202,20 @@ class Background extends DataMap {
 
 		//
 
+		const environmentBlendMode = renderer.xr.getEnvironmentBlendMode();
+
+		if ( environmentBlendMode === 'additive' ) {
+
+			_clearColor$1.set( 0, 0, 0, 1 );
+
+		} else if ( environmentBlendMode === 'alpha-blend' ) {
+
+			_clearColor$1.set( 0, 0, 0, 0 );
+
+		}
+
+		//
+
 		if ( renderer.autoClear === true || forceClear === true ) {
 
 			const clearColorValue = renderContext.clearColorValue;
@@ -38713,10 +39338,10 @@ class NodeBuilderState {
 	 * @param {Array<Node>} updateNodes - An array of nodes that implement their `update()` method.
 	 * @param {Array<Node>} updateBeforeNodes - An array of nodes that implement their `updateBefore()` method.
 	 * @param {Array<Node>} updateAfterNodes - An array of nodes that implement their `updateAfter()` method.
-	 * @param {NodeMaterialObserver} monitor - A node material observer.
+	 * @param {NodeMaterialObserver} observer - A node material observer.
 	 * @param {Array<Object>} transforms - An array with transform attribute objects. Only relevant when using compute shaders with WebGL 2.
 	 */
-	constructor( vertexShader, fragmentShader, computeShader, nodeAttributes, bindings, updateNodes, updateBeforeNodes, updateAfterNodes, monitor, transforms = [] ) {
+	constructor( vertexShader, fragmentShader, computeShader, nodeAttributes, bindings, updateNodes, updateBeforeNodes, updateAfterNodes, observer, transforms = [] ) {
 
 		/**
 		 * The native vertex shader code.
@@ -38789,7 +39414,7 @@ class NodeBuilderState {
 		 *
 		 * @type {NodeMaterialObserver}
 		 */
-		this.monitor = monitor;
+		this.observer = observer;
 
 		/**
 		 * How often this state is used by render objects.
@@ -38813,7 +39438,7 @@ class NodeBuilderState {
 
 		for ( const instanceGroup of this.bindings ) {
 
-			const shared = instanceGroup.bindings[ 0 ].groupNode.shared; // TODO: Is it safe to always check the first binding in the group?
+			const shared = instanceGroup.bindings[ 0 ].groupNode.shared; // All bindings in the group must have the same groupNode.
 
 			if ( shared !== true ) {
 
@@ -38996,8 +39621,9 @@ class NodeVar {
 	 * @param {String} name - The name of the variable.
 	 * @param {String} type - The type of the variable.
 	 * @param {Boolean} [readOnly=false] - The read-only flag.
+	 * @param {Number?} [count=null] - The size.
 	 */
-	constructor( name, type, readOnly = false ) {
+	constructor( name, type, readOnly = false, count = null ) {
 
 		/**
 		 * This flag can be used for type testing.
@@ -39025,9 +39651,16 @@ class NodeVar {
 		/**
 		 *  The read-only flag.
 		 *
-		 * @type {boolean}
+		 * @type {Boolean}
 		 */
 		this.readOnly = readOnly;
+
+		/**
+		 * The size.
+		 *
+		 * @type {Number?}
+		 */
+		this.count = count;
 
 	}
 
@@ -39194,64 +39827,13 @@ class NodeCache {
 
 }
 
-/**
- * {@link NodeBuilder} is going to create instances of this class during the build process
- * of nodes. They represent the final shader struct data that are going to be generated
- * by the builder. A dictionary of struct types is maintained in {@link NodeBuilder#structs}
- * for this purpose.
- */
-class StructTypeNode extends Node {
+class StructType {
 
-	static get type() {
+	constructor( name, members ) {
 
-		return 'StructTypeNode';
-
-	}
-
-	/**
-	 * Constructs a new struct type node.
-	 *
-	 * @param {String} name - The name of the struct.
-	 * @param {Array<String>} types - An array of types.
-	 */
-	constructor( name, types ) {
-
-		super();
-
-		/**
-		 * The name of the struct.
-		 *
-		 * @type {String}
-		 */
 		this.name = name;
-
-
-		/**
-		 * An array of types.
-		 *
-		 * @type {Array<String>}
-		 */
-		this.types = types;
-
-		/**
-		 * This flag can be used for type testing.
-		 *
-		 * @type {Boolean}
-		 * @readonly
-		 * @default true
-		 */
-		this.isStructTypeNode = true;
-
-	}
-
-	/**
-	 * Returns the member types.
-	 *
-	 * @return {Array<String>} The types.
-	 */
-	getMemberTypes() {
-
-		return this.types;
+		this.members = members;
+		this.output = false;
 
 	}
 
@@ -39507,6 +40089,41 @@ class ColorUniform extends Uniform {
 	}
 
 }
+
+/**
+ * Represents a Matrix2 uniform.
+ *
+ * @private
+ * @augments Uniform
+ */
+class Matrix2Uniform extends Uniform {
+
+	/**
+	 * Constructs a new Number uniform.
+	 *
+	 * @param {String} name - The uniform's name.
+	 * @param {Matrix2} value - The uniform's value.
+	 */
+	constructor( name, value = new Matrix2() ) {
+
+		super( name, value );
+
+		/**
+		 * This flag can be used for type testing.
+		 *
+		 * @type {Boolean}
+		 * @readonly
+		 * @default true
+		 */
+		this.isMatrix2Uniform = true;
+
+		this.boundary = 16;
+		this.itemSize = 4;
+
+	}
+
+}
+
 
 /**
  * Represents a Matrix3 uniform.
@@ -39811,6 +40428,58 @@ class ColorNodeUniform extends ColorUniform {
 	 * Overwritten to return the value of the node uniform.
 	 *
 	 * @return {Color} The value.
+	 */
+	getValue() {
+
+		return this.nodeUniform.value;
+
+	}
+
+	/**
+	 * Returns the node uniform data type.
+	 *
+	 * @return {String} The data type.
+	 */
+	getType() {
+
+		return this.nodeUniform.type;
+
+	}
+
+}
+
+
+/**
+ * A special form of Matrix2 uniform binding type.
+ * It's value is managed by a node object.
+ *
+ * @private
+ * @augments Matrix2Uniform
+ */
+class Matrix2NodeUniform extends Matrix2Uniform {
+
+	/**
+	 * Constructs a new node-based Matrix2 uniform.
+	 *
+	 * @param {NodeUniform} nodeUniform - The node uniform.
+	 */
+	constructor( nodeUniform ) {
+
+		super( nodeUniform.name, nodeUniform.value );
+
+		/**
+		 * The node uniform.
+		 *
+		 * @type {NodeUniform}
+		 */
+		this.nodeUniform = nodeUniform;
+
+	}
+
+	/**
+	 * Overwritten to return the value of the node uniform.
+	 *
+	 * @return {Matrix2} The value.
 	 */
 	getValue() {
 
@@ -40955,7 +41624,7 @@ class NodeBuilder {
 		 * @type {NodeMaterialObserver?}
 		 * @default null
 		 */
-		this.monitor = null;
+		this.observer = null;
 
 		/**
 		 * A reference to the current lights node.
@@ -41830,6 +42499,88 @@ class NodeBuilder {
 	}
 
 	/**
+	 * Generates the array declaration string.
+	 *
+	 * @param {String} type - The type.
+	 * @param {Number?} [count] - The count.
+	 * @return {String} The generated value as a shader string.
+	 */
+	generateArrayDeclaration( type, count ) {
+
+		return this.getType( type ) + '[ ' + count + ' ]';
+
+	}
+
+	/**
+	 * Generates the array shader string for the given type and value.
+	 *
+	 * @param {String} type - The type.
+	 * @param {Number?} [count] - The count.
+	 * @param {Array<Node>?} [values=null] - The default values.
+	 * @return {String} The generated value as a shader string.
+	 */
+	generateArray( type, count, values = null ) {
+
+		let snippet = this.generateArrayDeclaration( type, count ) + '( ';
+
+		for ( let i = 0; i < count; i ++ ) {
+
+			const value = values ? values[ i ] : null;
+
+			if ( value !== null ) {
+
+				snippet += value.build( this, type );
+
+			} else {
+
+				snippet += this.generateConst( type );
+
+			}
+
+			if ( i < count - 1 ) snippet += ', ';
+
+		}
+
+		snippet += ' )';
+
+		return snippet;
+
+	}
+
+	/**
+	 * Generates the struct shader string.
+	 *
+	 * @param {String} type - The type.
+	 * @param {Array<Object>} [membersLayout] - The count.
+	 * @param {Array<Node>?} [values=null] - The default values.
+	 * @return {String} The generated value as a shader string.
+	 */
+	generateStruct( type, membersLayout, values = null ) {
+
+		const snippets = [];
+
+		for ( const member of membersLayout ) {
+
+			const { name, type } = member;
+
+			if ( values && values[ name ] && values[ name ].isNode ) {
+
+				snippets.push( values[ name ].build( this, type ) );
+
+			} else {
+
+				snippets.push( this.generateConst( type ) );
+
+			}
+
+		}
+
+		return type + '( ' + snippets.join( ', ' ) + ' )';
+
+	}
+
+
+	/**
 	 * Generates the shader string for the given type and value.
 	 *
 	 * @param {String} type - The type.
@@ -42096,8 +42847,15 @@ class NodeBuilder {
 
 		if ( length === 1 ) return componentType;
 
-		const baseType = getTypeFromLength( length );
+		let baseType = getTypeFromLength( length );
 		const prefix = componentType === 'float' ? '' : componentType[ 0 ];
+
+		// fix edge case for mat2x2 being same size as vec4
+		if ( /mat2/.test( componentType ) === true ) {
+
+			baseType = baseType.replace( 'vec', 'mat' );
+
+		}
 
 		return prefix + baseType;
 
@@ -42313,14 +43071,15 @@ class NodeBuilder {
 	}
 
 	/**
-	 * Returns an instance of {@link StructTypeNode} for the given output struct node.
+	 * Returns an instance of {@link StructType} for the given output struct node.
 	 *
 	 * @param {OutputStructNode} node - The output struct node.
-	 * @param {Array<String>} types - The output struct types.
+	 * @param {Array<Object>} membersLayout - The output struct types.
+	 * @param {String?} [name=null] - The name of the struct.
 	 * @param {('vertex'|'fragment'|'compute'|'any')} [shaderStage=this.shaderStage] - The shader stage.
-	 * @return {StructTypeNode} The struct type attribute.
+	 * @return {StructType} The struct type attribute.
 	 */
-	getStructTypeFromNode( node, types, shaderStage = this.shaderStage ) {
+	getStructTypeFromNode( node, membersLayout, name = null, shaderStage = this.shaderStage ) {
 
 		const nodeData = this.getDataFromNode( node, shaderStage );
 
@@ -42330,13 +43089,31 @@ class NodeBuilder {
 
 			const index = this.structs.index ++;
 
-			structType = new StructTypeNode( 'StructType' + index, types );
+			if ( name === null ) name = 'StructType' + index;
+
+			structType = new StructType( name, membersLayout );
 
 			this.structs[ shaderStage ].push( structType );
 
 			nodeData.structType = structType;
 
 		}
+
+		return structType;
+
+	}
+
+	/**
+	 * Returns an instance of {@link StructType} for the given output struct node.
+	 *
+	 * @param {OutputStructNode} node - The output struct node.
+	 * @param {Array<Object>} membersLayout - The output struct types.
+	 * @return {StructType} The struct type attribute.
+	 */
+	getOutputStructTypeFromNode( node, membersLayout ) {
+
+		const structType = this.getStructTypeFromNode( node, membersLayout, 'OutputType', 'fragment' );
+		structType.output = true;
 
 		return structType;
 
@@ -42374,6 +43151,23 @@ class NodeBuilder {
 	}
 
 	/**
+	 * Returns the array length.
+	 *
+	 * @param {Node} node - The node.
+	 * @return {Number?} The array length.
+	 */
+	getArrayCount( node ) {
+
+		let count = null;
+
+		if ( node.isArrayNode ) count = node.count;
+		else if ( node.isVarNode && node.node.isArrayNode ) count = node.node.count;
+
+		return count;
+
+	}
+
+	/**
 	 * Returns an instance of {@link NodeVar} for the given variable node.
 	 *
 	 * @param {VarNode} node - The variable node.
@@ -42405,7 +43199,11 @@ class NodeBuilder {
 
 			}
 
-			nodeVar = new NodeVar( name, type, readOnly );
+			//
+
+			const count = this.getArrayCount( node );
+
+			nodeVar = new NodeVar( name, type, readOnly, count );
 
 			if ( ! readOnly ) {
 
@@ -42439,6 +43237,24 @@ class NodeBuilder {
 
 			return this.isDeterministic( node.aNode ) &&
 				( node.bNode ? this.isDeterministic( node.bNode ) : true );
+
+		} else if ( node.isArrayNode ) {
+
+			if ( node.values !== null ) {
+
+				for ( const n of node.values ) {
+
+					if ( ! this.isDeterministic( n ) ) {
+
+						return false;
+
+					}
+
+				}
+
+			}
+
+			return true;
 
 		} else if ( node.isConstNode ) {
 
@@ -42903,11 +43719,12 @@ class NodeBuilder {
 	 *
 	 * @param {String} type - The variable's type.
 	 * @param {String} name - The variable's name.
+	 * @param {Number?} [count=null] - The array length.
 	 * @return {String} The shader string.
 	 */
-	getVar( type, name ) {
+	getVar( type, name, count = null ) {
 
-		return `${ this.getType( type ) } ${ name }`;
+		return `${ count !== null ? this.generateArrayDeclaration( type, count ) : this.getType( type ) } ${ name }`;
 
 	}
 
@@ -43135,6 +43952,7 @@ class NodeBuilder {
 		if ( type === 'vec3' || type === 'ivec3' || type === 'uvec3' ) return new Vector3NodeUniform( uniformNode );
 		if ( type === 'vec4' || type === 'ivec4' || type === 'uvec4' ) return new Vector4NodeUniform( uniformNode );
 		if ( type === 'color' ) return new ColorNodeUniform( uniformNode );
+		if ( type === 'mat2' ) return new Matrix2NodeUniform( uniformNode );
 		if ( type === 'mat3' ) return new Matrix3NodeUniform( uniformNode );
 		if ( type === 'mat4' ) return new Matrix4NodeUniform( uniformNode );
 
@@ -43243,7 +44061,7 @@ class NodeBuilder {
 
 	}
 
-	// deprecated
+	// Deprecated
 
 	/**
 	 * @function
@@ -44698,7 +45516,7 @@ class Nodes extends DataMap {
 			nodeBuilder.updateNodes,
 			nodeBuilder.updateBeforeNodes,
 			nodeBuilder.updateAfterNodes,
-			nodeBuilder.monitor,
+			nodeBuilder.observer,
 			nodeBuilder.transforms
 		);
 
@@ -45819,6 +46637,77 @@ class Lighting extends ChainMap {
 
 }
 
+/**
+ * A special type of render target that is used when rendering
+ * with the WebXR Device API.
+ *
+ * @private
+ * @augments RenderTarget
+ */
+class XRRenderTarget extends RenderTarget {
+
+	/**
+	 * Constructs a new XR render target.
+	 *
+	 * @param {Number} [width=1] - The width of the render target.
+	 * @param {Number} [height=1] - The height of the render target.
+	 * @param {Object} [options={}] - The configuration options.
+	 */
+	constructor( width = 1, height = 1, options = {} ) {
+
+		super( width, height, options );
+
+		/**
+		 * This flag can be used for type testing.
+		 *
+		 * @type {Boolean}
+		 * @readonly
+		 * @default true
+		 */
+		this.isXRRenderTarget = true;
+
+		/**
+		 * Whether the attachments of the render target
+		 * are defined by external textures. This flag is
+		 * set to `true` when using the WebXR Layers API.
+		 *
+		 * @type {Boolean}
+		 * @default false
+		 */
+		this.hasExternalTextures = false;
+
+		/**
+		 * Whether a depth buffer should automatically be allocated
+		 * for this XR render target or not.
+		 *
+		 * Allocating a depth buffer is the default behavior of XR render
+		 * targets. However, when using the WebXR Layers API, this flag
+		 * must be set to `false` when the `ignoreDepthValues` property of
+		 * the projection layers evaluates to `false`.
+		 *
+		 * Reference: {@link https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayer-ignoredepthvalues}.
+		 *
+		 * @type {Boolean}
+		 * @default true
+		 */
+		this.autoAllocateDepthBuffer = true;
+
+	}
+
+	copy( source ) {
+
+		super.copy( source );
+
+		this.hasExternalTextures = source.hasExternalTextures;
+		this.autoAllocateDepthBuffer = source.autoAllocateDepthBuffer;
+
+		return this;
+
+	}
+
+
+}
+
 const _cameraLPos = /*@__PURE__*/ new Vector3();
 const _cameraRPos = /*@__PURE__*/ new Vector3();
 
@@ -45827,6 +46716,8 @@ const _cameraRPos = /*@__PURE__*/ new Vector3();
  * manage XR sessions with `WebGPURenderer`.
  *
  * XR is currently only supported with a WebGL 2 backend.
+ *
+ * @augments EventDispatcher
  */
 class XRManager extends EventDispatcher {
 
@@ -46096,6 +46987,24 @@ class XRManager extends EventDispatcher {
 		this._glBaseLayer = null;
 
 		/**
+		 * A reference to the current XR binding.
+		 *
+		 * @private
+		 * @type {XRWebGLBinding?}
+		 * @default null
+		 */
+		this._glBinding = null;
+
+		/**
+		 * A reference to the current XR projection layer.
+		 *
+		 * @private
+		 * @type {XRProjectionLayer?}
+		 * @default null
+		 */
+		this._glProjLayer = null;
+
+		/**
 		 * A reference to the current XR frame.
 		 *
 		 * @private
@@ -46103,6 +47012,15 @@ class XRManager extends EventDispatcher {
 		 * @default null
 		 */
 		this._xrFrame = null;
+
+		/**
+		 * Whether to use the WebXR Layers API or not.
+		 *
+		 * @private
+		 * @type {Boolean}
+		 * @readonly
+		 */
+		this._useLayers = ( typeof XRWebGLBinding !== 'undefined' && 'createProjectionLayer' in XRWebGLBinding.prototype ); // eslint-disable-line compat/compat
 
 	}
 
@@ -46157,11 +47075,11 @@ class XRManager extends EventDispatcher {
 	/**
 	 * Returns the foveation value.
 	 *
-	 * @return {Number|undefined} The foveation value. Returns `undefined` if no base layer is defined.
+	 * @return {Number|undefined} The foveation value. Returns `undefined` if no base or projection layer is defined.
 	 */
 	getFoveation() {
 
-		if ( this._glBaseLayer === null ) {
+		if ( this._glProjLayer === null && this._glBaseLayer === null ) {
 
 			return undefined;
 
@@ -46181,6 +47099,12 @@ class XRManager extends EventDispatcher {
 
 		this._foveation = foveation;
 
+		if ( this._glProjLayer !== null ) {
+
+			this._glProjLayer.fixedFoveation = foveation;
+
+		}
+
 		if ( this._glBaseLayer !== null && this._glBaseLayer.fixedFoveation !== undefined ) {
 
 			this._glBaseLayer.fixedFoveation = foveation;
@@ -46190,9 +47114,9 @@ class XRManager extends EventDispatcher {
 	}
 
 	/**
-	 * Returns the frammebuffer scale factor.
+	 * Returns the framebuffer scale factor.
 	 *
-	 * @return {Number} The frammebuffer scale factor.
+	 * @return {Number} The framebuffer scale factor.
 	 */
 	getFramebufferScaleFactor() {
 
@@ -46201,11 +47125,11 @@ class XRManager extends EventDispatcher {
 	}
 
 	/**
-	 * Sets the frammebuffer scale factor.
+	 * Sets the framebuffer scale factor.
 	 *
 	 * This method can not be used during a XR session.
 	 *
-	 * @param {Number} factor - The frammebuffer scale factor.
+	 * @param {Number} factor - The framebuffer scale factor.
 	 */
 	setFramebufferScaleFactor( factor ) {
 
@@ -46285,7 +47209,7 @@ class XRManager extends EventDispatcher {
 	/**
 	 * Returns the environment blend mode from the current XR session.
 	 *
-	 * @return {'opaque'|'additive'|'alpha-blend'} The environment blend mode.
+	 * @return {('opaque'|'additive'|'alpha-blend')?} The environment blend mode. Returns `null` when used outside of a XR session.
 	 */
 	getEnvironmentBlendMode() {
 
@@ -46331,13 +47255,15 @@ class XRManager extends EventDispatcher {
 	async setSession( session ) {
 
 		const renderer = this._renderer;
+		const backend = renderer.backend;
+
 		const gl = renderer.getContext();
 
 		this._session = session;
 
 		if ( session !== null ) {
 
-			if ( renderer.backend.isWebGPUBackend === true ) throw new Error( 'THREE.XRManager: XR is currently not supported with a WebGPU backend. Use WebGL by passing "{ forceWebGL: true }" to the constructor of the renderer.' );
+			if ( backend.isWebGPUBackend === true ) throw new Error( 'THREE.XRManager: XR is currently not supported with a WebGPU backend. Use WebGL by passing "{ forceWebGL: true }" to the constructor of the renderer.' );
 
 			this._currentRenderTarget = renderer.getRenderTarget();
 
@@ -46350,7 +47276,7 @@ class XRManager extends EventDispatcher {
 			session.addEventListener( 'end', this._onSessionEnd );
 			session.addEventListener( 'inputsourceschange', this._onInputSourcesChange );
 
-			await renderer.makeXRCompatible();
+			await backend.makeXRCompatible();
 
 			this._currentPixelRatio = renderer.getPixelRatio();
 			renderer.getSize( this._currentSize );
@@ -46359,36 +47285,89 @@ class XRManager extends EventDispatcher {
 			this._currentAnimationLoop = renderer._animation.getAnimationLoop();
 			renderer._animation.stop();
 
-			const attributes = gl.getContextAttributes();
+			//
 
-			const layerInit = {
-				antialias: attributes.antialias,
-				alpha: true,
-				depth: attributes.depth,
-				stencil: attributes.stencil,
-				framebufferScaleFactor: this.getFramebufferScaleFactor()
-			};
+			if ( this._useLayers === true ) {
 
-			const glBaseLayer = new XRWebGLLayer( session, gl, layerInit );
-			this._glBaseLayer = glBaseLayer;
+				// default path using XRWebGLBinding/XRProjectionLayer
 
-			session.updateRenderState( { baseLayer: glBaseLayer } );
+				let depthFormat = null;
+				let depthType = null;
+				let glDepthFormat = null;
 
-			renderer.setPixelRatio( 1 );
-			renderer.setSize( glBaseLayer.framebufferWidth, glBaseLayer.framebufferHeight, false );
+				if ( renderer.depth ) {
 
-			this._xrRenderTarget = new RenderTarget(
-				glBaseLayer.framebufferWidth,
-				glBaseLayer.framebufferHeight,
-				{
-					format: RGBAFormat,
-					type: UnsignedByteType,
-					colorSpace: renderer.outputColorSpace,
-					stencilBuffer: attributes.stencil
+					glDepthFormat = renderer.stencil ? gl.DEPTH24_STENCIL8 : gl.DEPTH_COMPONENT24;
+					depthFormat = renderer.stencil ? DepthStencilFormat : DepthFormat;
+					depthType = renderer.stencil ? UnsignedInt248Type : UnsignedIntType;
+
 				}
-			);
 
-			this._xrRenderTarget.isXRRenderTarget = true; // TODO Remove this when possible, see #23278
+				const projectionlayerInit = {
+					colorFormat: gl.RGBA8,
+					depthFormat: glDepthFormat,
+					scaleFactor: this._framebufferScaleFactor
+				};
+
+				const glBinding = new XRWebGLBinding( session, gl );
+				const glProjLayer = glBinding.createProjectionLayer( projectionlayerInit );
+
+				this._glBinding = glBinding;
+				this._glProjLayer = glProjLayer;
+
+				session.updateRenderState( { layers: [ glProjLayer ] } );
+
+				renderer.setPixelRatio( 1 );
+				renderer.setSize( glProjLayer.textureWidth, glProjLayer.textureHeight, false );
+
+				this._xrRenderTarget = new XRRenderTarget(
+					glProjLayer.textureWidth,
+					glProjLayer.textureHeight,
+					{
+						format: RGBAFormat,
+						type: UnsignedByteType,
+						colorSpace: renderer.outputColorSpace,
+						depthTexture: new DepthTexture( glProjLayer.textureWidth, glProjLayer.textureHeight, depthType, undefined, undefined, undefined, undefined, undefined, undefined, depthFormat ),
+						stencilBuffer: renderer.stencil,
+						samples: renderer.samples
+					} );
+
+				this._xrRenderTarget.hasExternalTextures = true;
+
+			} else {
+
+				// fallback to XRWebGLLayer
+
+				const layerInit = {
+					antialias: renderer.samples > 0,
+					alpha: true,
+					depth: renderer.depth,
+					stencil: renderer.stencil,
+					framebufferScaleFactor: this.getFramebufferScaleFactor()
+				};
+
+				const glBaseLayer = new XRWebGLLayer( session, gl, layerInit );
+				this._glBaseLayer = glBaseLayer;
+
+				session.updateRenderState( { baseLayer: glBaseLayer } );
+
+				renderer.setPixelRatio( 1 );
+				renderer.setSize( glBaseLayer.framebufferWidth, glBaseLayer.framebufferHeight, false );
+
+				this._xrRenderTarget = new XRRenderTarget(
+					glBaseLayer.framebufferWidth,
+					glBaseLayer.framebufferHeight,
+					{
+						format: RGBAFormat,
+						type: UnsignedByteType,
+						colorSpace: renderer.outputColorSpace,
+						stencilBuffer: renderer.stencil
+					}
+				);
+
+			}
+
+			//
 
 			this.setFoveation( this.getFoveation() );
 
@@ -46408,7 +47387,7 @@ class XRManager extends EventDispatcher {
 
 	/**
 	 * This method is called by the renderer per frame and updates the XR camera
-	 * and it sub cameras based on the given camera. The given camera is the "normal"
+	 * and it sub cameras based on the given camera. The given camera is the "user"
 	 * camera created on application level and used for non-XR rendering.
 	 *
 	 * @param {PerspectiveCamera} camera - The camera.
@@ -46690,6 +47669,7 @@ function onSessionEnd() {
 
 	// restore framebuffer/rendering state
 
+	renderer.backend.setXRTarget( null );
 	renderer.setRenderTarget( this._currentRenderTarget );
 
 	this._session = null;
@@ -46707,8 +47687,6 @@ function onSessionEnd() {
 
 	renderer.setPixelRatio( this._currentPixelRatio );
 	renderer.setSize( this._currentSize.width, this._currentSize.height, false );
-
-	renderer.setXRTarget( null );
 
 	this.dispatchEvent( { type: 'sessionend' } );
 
@@ -46789,6 +47767,7 @@ function onAnimationFrame( time, frame ) {
 
 	const cameraXR = this._cameraXR;
 	const renderer = this._renderer;
+	const backend = renderer.backend;
 
 	const glBaseLayer = this._glBaseLayer;
 
@@ -46801,8 +47780,11 @@ function onAnimationFrame( time, frame ) {
 
 		const views = pose.views;
 
-		renderer.setXRTarget( glBaseLayer.framebuffer );
-		renderer.setRenderTarget( this._xrRenderTarget );
+		if ( this._glBaseLayer !== null ) {
+
+			backend.setXRTarget( glBaseLayer.framebuffer );
+
+		}
 
 		let cameraXRNeedsUpdate = false;
 
@@ -46819,7 +47801,29 @@ function onAnimationFrame( time, frame ) {
 
 			const view = views[ i ];
 
-			const viewport = glBaseLayer.getViewport( view );
+			let viewport;
+
+			if ( this._useLayers === true ) {
+
+				const glSubImage = this._glBinding.getViewSubImage( this._glProjLayer, view );
+				viewport = glSubImage.viewport;
+
+				// For side-by-side projection, we only produce a single texture for both eyes.
+				if ( i === 0 ) {
+
+					backend.setXRRenderTargetTextures(
+						this._xrRenderTarget,
+						glSubImage.colorTexture,
+						this._glProjLayer.ignoreDepthValues ? undefined : glSubImage.depthStencilTexture
+					);
+
+				}
+
+			} else {
+
+				viewport = glBaseLayer.getViewport( view );
+
+			}
 
 			let camera = this._cameras[ i ];
 
@@ -46852,6 +47856,8 @@ function onAnimationFrame( time, frame ) {
 			}
 
 		}
+
+		renderer.setRenderTarget( this._xrRenderTarget );
 
 	}
 
@@ -46909,6 +47915,8 @@ class Renderer {
 	 * @param {Number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. This parameter can set to any other integer value than 0
 	 * to overwrite the default.
 	 * @param {Function?} [parameters.getFallback=null] - This callback function can be used to provide a fallback backend, if the primary backend can't be targeted.
+	 * @param {Number} [parameters.colorBufferType=HalfFloatType] - Defines the type of color buffers. The default `HalfFloatType` is recommend for best
+	 * quality. To save memory and bandwidth, `UnsignedByteType` might be used. This will reduce rendering quality though.
 	 */
 	constructor( backend, parameters = {} ) {
 
@@ -46930,7 +47938,8 @@ class Renderer {
 			stencil = false,
 			antialias = false,
 			samples = 0,
-			getFallback = null
+			getFallback = null,
+			colorBufferType = HalfFloatType
 		} = parameters;
 
 		/**
@@ -47432,6 +48441,17 @@ class Renderer {
 		this.onDeviceLost = this._onDeviceLost;
 
 		/**
+		 * Defines the type of color buffers. The default `HalfFloatType` is recommend for
+		 * best quality. To save memory and bandwidth, `UnsignedByteType` might be used.
+		 * This will reduce rendering quality though.
+		 *
+		 * @private
+		 * @type {Number}
+		 * @default HalfFloatType
+		 */
+		this._colorBufferType = colorBufferType;
+
+		/**
 		 * Whether the renderer has been initialized or not.
 		 *
 		 * @private
@@ -47786,9 +48806,7 @@ class Renderer {
 
 		if ( this._initialized === false ) await this.init();
 
-		const renderContext = this._renderScene( scene, camera );
-
-		await this.backend.resolveTimestampAsync( renderContext, 'render' );
+		this._renderScene( scene, camera );
 
 	}
 
@@ -47827,6 +48845,17 @@ class Renderer {
 	getMRT() {
 
 		return this._mrt;
+
+	}
+
+	/**
+	 * Returns the color buffer type.
+	 *
+	 * @return {Number} The color buffer type.
+	 */
+	getColorBufferType() {
+
+		return this._colorBufferType;
 
 	}
 
@@ -47984,7 +49013,7 @@ class Renderer {
 			frameBufferTarget = new RenderTarget( width, height, {
 				depthBuffer: depth,
 				stencilBuffer: stencil,
-				type: HalfFloatType, // FloatType
+				type: this._colorBufferType,
 				format: RGBAFormat,
 				colorSpace: LinearSRGBColorSpace,
 				generateMipmaps: false,
@@ -48204,11 +49233,7 @@ class Renderer {
 
 		//
 
-		if ( xr.enabled === false || xr.isPresenting === false ) {
-
-			this._background.update( sceneRef, renderList, renderContext );
-
-		}
+		this._background.update( sceneRef, renderList, renderContext );
 
 		//
 
@@ -48886,31 +49911,16 @@ class Renderer {
 		this._renderContexts.dispose();
 		this._textures.dispose();
 
+		if ( this._frameBufferTarget !== null ) this._frameBufferTarget.dispose();
+
+		Object.values( this.backend.timestampQueryPool ).forEach( queryPool => {
+
+			if ( queryPool !== null ) queryPool.dispose();
+
+		} );
+
 		this.setRenderTarget( null );
 		this.setAnimationLoop( null );
-
-	}
-
-	/**
-	 * Ensures the renderer is XR compatible.
-	 *
-	 * @async
-	 * @return {Promise} A Promise that resolve when the renderer is XR compatible.
-	 */
-	async makeXRCompatible() {
-
-		await this.backend.makeXRCompatible();
-
-	}
-
-	/**
-	 * Sets the XR rendering destination.
-	 *
-	 * @param {WebGLFramebuffer} xrTarget - The XR target.
-	 */
-	setXRTarget( xrTarget ) {
-
-		this.backend.setXRTarget( xrTarget );
 
 	}
 
@@ -49096,8 +50106,6 @@ class Renderer {
 
 		this.compute( computeNodes );
 
-		await this.backend.resolveTimestampAsync( computeNodes, 'compute' );
-
 	}
 
 	/**
@@ -49112,6 +50120,14 @@ class Renderer {
 		if ( this._initialized === false ) await this.init();
 
 		return this.backend.hasFeature( name );
+
+	}
+
+	async resolveTimestampsAsync( type = 'render' ) {
+
+		if ( this._initialized === false ) await this.init();
+
+		return this.backend.resolveTimestampsAsync( type );
 
 	}
 
@@ -51248,7 +52264,7 @@ ${ flowData.code }
 
 			for ( const variable of vars ) {
 
-				snippets.push( `${ this.getVar( variable.type, variable.name ) };` );
+				snippets.push( `${ this.getVar( variable.type, variable.name, variable.count ) };` );
 
 			}
 
@@ -51448,12 +52464,10 @@ ${ flowData.code }
 	getStructMembers( struct ) {
 
 		const snippets = [];
-		const members = struct.getMemberTypes();
 
-		for ( let i = 0; i < members.length; i ++ ) {
+		for ( const member of struct.members ) {
 
-			const member = members[ i ];
-			snippets.push( `layout( location = ${i} ) out ${ member} m${i};` );
+			snippets.push( `\t${ member.type } ${ member.name };` );
 
 		}
 
@@ -51472,25 +52486,37 @@ ${ flowData.code }
 		const snippets = [];
 		const structs = this.structs[ shaderStage ];
 
-		if ( structs.length === 0 ) {
+		const outputSnippet = [];
 
-			return 'layout( location = 0 ) out vec4 fragColor;\n';
+		for ( const struct of structs ) {
+
+			if ( struct.output ) {
+
+				for ( const member of struct.members ) {
+
+					outputSnippet.push( `layout( location = ${ member.index } ) out ${ member.type } ${ member.name };` );
+
+				}
+
+			} else {
+
+				let snippet = 'struct ' + struct.name + ' {\n';
+				snippet += this.getStructMembers( struct );
+				snippet += '\n};\n';
+
+				snippets.push( snippet );
+
+			}
 
 		}
 
-		for ( let index = 0, length = structs.length; index < length; index ++ ) {
+		if ( outputSnippet.length === 0 ) {
 
-			const struct = structs[ index ];
-
-			let snippet = '\n';
-			snippet += this.getStructMembers( struct );
-			snippet += '\n';
-
-			snippets.push( snippet );
+			outputSnippet.push( 'layout( location = 0 ) out vec4 fragColor;' );
 
 		}
 
-		return snippets.join( '\n\n' );
+		return '\n' + outputSnippet.join( '\n' ) + '\n\n' + snippets.join( '\n' );
 
 	}
 
@@ -51511,10 +52537,20 @@ ${ flowData.code }
 			for ( const varying of varyings ) {
 
 				if ( shaderStage === 'compute' ) varying.needsInterpolation = true;
-				const type = this.getType( varying.type );
-				const flat = type.includes( 'int' ) || type.includes( 'uv' ) || type.includes( 'iv' ) ? 'flat ' : '';
 
-				snippet += `${flat}${varying.needsInterpolation ? 'out' : '/*out*/'} ${type} ${varying.name};\n`;
+				const type = this.getType( varying.type );
+
+				if ( varying.needsInterpolation ) {
+
+					const flat = type.includes( 'int' ) || type.includes( 'uv' ) || type.includes( 'iv' ) ? 'flat ' : '';
+
+					snippet += `${flat} out ${type} ${varying.name};\n`;
+
+				} else {
+
+					snippet += `${type} ${varying.name};\n`; // generate variable (no varying required)
+
+				}
 
 			}
 
@@ -51908,6 +52944,7 @@ ${shaderData.varyings}
 // codes
 ${shaderData.codes}
 
+// structs
 ${shaderData.structs}
 
 void main() {
@@ -52147,6 +53184,16 @@ class Backend {
 		 * @default null
 		 */
 		this.domElement = null;
+
+		/**
+		 * A reference to the timestamp query pool.
+   		 *
+   		 * @type {{render: TimestampQueryPool?, compute: TimestampQueryPool?}}
+		 */
+		this.timestampQueryPool = {
+			'render': null,
+			'compute': null
+		};
 
 	}
 
@@ -52527,11 +53574,33 @@ class Backend {
 	 *
 	 * @async
 	 * @abstract
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {String} type - The render context.
-	 * @return {Promise} A Promise that resolves when the time stamp has been computed.
+	 * @param {String} [type='render'] - The type of the time stamp.
+	 * @return {Promise<Number>} A Promise that resolves with the time stamp.
 	 */
-	async resolveTimestampAsync( /*renderContext, type*/ ) { }
+	async resolveTimestampsAsync( type = 'render' ) {
+
+		if ( ! this.trackTimestamp ) {
+
+			warnOnce( 'WebGPURenderer: Timestamp tracking is disabled.' );
+			return;
+
+		}
+
+		const queryPool = this.timestampQueryPool[ type ];
+		if ( ! queryPool ) {
+
+			warnOnce( `WebGPURenderer: No timestamp query pool for type '${type}' found.` );
+			return;
+
+		}
+
+		const duration = await queryPool.resolveQueriesAsync();
+
+		this.renderer.info[ type ].timestamp = duration;
+
+		return duration;
+
+	}
 
 	/**
 	 * Can be used to synchronize CPU operations with GPU tasks. So when this method is called,
@@ -53031,7 +54100,7 @@ class WebGLAttributeUtils {
 
 }
 
-let initialized$1 = false, equationToGL, factorToGL;
+let equationToGL, factorToGL;
 
 /**
  * A WebGL 2 backend utility module for managing the WebGL state.
@@ -53104,13 +54173,8 @@ class WebGLState {
 		this.currentBoundTextures = {};
 		this.currentBoundBufferBases = {};
 
-		if ( initialized$1 === false ) {
 
-			this._init();
-
-			initialized$1 = true;
-
-		}
+		this._init();
 
 	}
 
@@ -54687,7 +55751,8 @@ class WebGLTextureUtils {
 
 		if ( glFormat === gl.DEPTH_COMPONENT ) {
 
-			if ( glType === gl.UNSIGNED_INT ) internalFormat = gl.DEPTH24_STENCIL8;
+			if ( glType === gl.UNSIGNED_SHORT ) internalFormat = gl.DEPTH_COMPONENT16;
+			if ( glType === gl.UNSIGNED_INT ) internalFormat = gl.DEPTH_COMPONENT24;
 			if ( glType === gl.FLOAT ) internalFormat = gl.DEPTH_COMPONENT32F;
 
 		}
@@ -55343,13 +56408,15 @@ class WebGLTextureUtils {
 	 *
 	 * @param {WebGLRenderbuffer} renderbuffer - The render buffer.
 	 * @param {RenderContext} renderContext - The render context.
+	 * @param {Number} samples - The MSAA sample count.
+	 * @param {Boolean} [useMultisampledRTT=false] - Whether to use WEBGL_multisampled_render_to_texture or not.
 	 */
-	setupRenderBufferStorage( renderbuffer, renderContext ) {
+	setupRenderBufferStorage( renderbuffer, renderContext, samples, useMultisampledRTT = false ) {
 
 		const { gl } = this;
 		const renderTarget = renderContext.renderTarget;
 
-		const { samples, depthTexture, depthBuffer, stencilBuffer, width, height } = renderTarget;
+		const { depthTexture, depthBuffer, stencilBuffer, width, height } = renderTarget;
 
 		gl.bindRenderbuffer( gl.RENDERBUFFER, renderbuffer );
 
@@ -55357,7 +56424,13 @@ class WebGLTextureUtils {
 
 			let glInternalFormat = gl.DEPTH_COMPONENT24;
 
-			if ( samples > 0 ) {
+			if ( useMultisampledRTT === true ) {
+
+				const multisampledRTTExt = this.extensions.get( 'WEBGL_multisampled_render_to_texture' );
+
+				multisampledRTTExt.renderbufferStorageMultisampleEXT( gl.RENDERBUFFER, renderTarget.samples, glInternalFormat, width, height );
+
+			} else if ( samples > 0 ) {
 
 				if ( depthTexture && depthTexture.isDepthTexture ) {
 
@@ -55807,6 +56880,399 @@ class WebGLBufferRenderer {
 
 }
 
+class TimestampQueryPool {
+
+	constructor( maxQueries = 256 ) {
+
+		this.trackTimestamp = true;
+		this.maxQueries = maxQueries;
+		this.currentQueryIndex = 0; // how many queries allocated so far
+		this.queryOffsets = new Map(); // track offsets for different contexts
+		this.isDisposed = false;
+		this.lastValue = 0;
+		this.pendingResolve = false;
+
+	}
+
+	/**
+     * Allocate queries for a specific renderContext.
+	 *
+	 * @abstract
+     */
+	allocateQueriesForContext( /* renderContext */ ) {}
+
+	/**
+     * Resolve all timestamps and return data (or process them).
+	 *
+	 * @abstract
+	 * @returns {Promise<Number>|Number} The resolved timestamp value.
+     */
+	async resolveQueriesAsync() {}
+
+	/**
+	 * Dispose of the query pool.
+	 *
+	 * @abstract
+	 */
+	dispose() {}
+
+}
+
+/**
+ * Manages a pool of WebGL timestamp queries for performance measurement.
+ * Handles creation, execution, and resolution of timer queries using WebGL extensions.
+ * @extends TimestampQueryPool
+ */
+class WebGLTimestampQueryPool extends TimestampQueryPool {
+
+	/**
+     * Creates a new WebGL timestamp query pool.
+     * @param {WebGLRenderingContext|WebGL2RenderingContext} gl - The WebGL context.
+     * @param {string} type - The type identifier for this query pool.
+     * @param {number} [maxQueries=2048] - Maximum number of queries this pool can hold.
+     */
+	constructor( gl, type, maxQueries = 2048 ) {
+
+		super( maxQueries );
+
+		this.gl = gl;
+		this.type = type;
+
+		// Check for timer query extensions
+		this.ext = gl.getExtension( 'EXT_disjoint_timer_query_webgl2' ) ||
+                  gl.getExtension( 'EXT_disjoint_timer_query' );
+
+		if ( ! this.ext ) {
+
+			console.warn( 'EXT_disjoint_timer_query not supported; timestamps will be disabled.' );
+			this.trackTimestamp = false;
+			return;
+
+		}
+
+		// Create query objects
+		this.queries = [];
+		for ( let i = 0; i < this.maxQueries; i ++ ) {
+
+			this.queries.push( gl.createQuery() );
+
+		}
+
+		this.activeQuery = null;
+		this.queryStates = new Map(); // Track state of each query: 'inactive', 'started', 'ended'
+
+	}
+
+	/**
+     * Allocates a pair of queries for a given render context.
+     * @param {Object} renderContext - The render context to allocate queries for.
+     * @returns {?number} The base offset for the allocated queries, or null if allocation failed.
+     */
+	allocateQueriesForContext( renderContext ) {
+
+		if ( ! this.trackTimestamp ) return null;
+
+		// Check if we have enough space for a new query pair
+		if ( this.currentQueryIndex + 2 > this.maxQueries ) {
+
+			warnOnce( `WebGPUTimestampQueryPool [${ this.type }]: Maximum number of queries exceeded, when using trackTimestamp it is necessary to resolves the queries via renderer.resolveTimestampsAsync( THREE.TimestampQuery.${ this.type.toUpperCase() } ).` );
+			return null;
+
+		}
+
+		const baseOffset = this.currentQueryIndex;
+		this.currentQueryIndex += 2;
+
+		// Initialize query states
+		this.queryStates.set( baseOffset, 'inactive' );
+		this.queryOffsets.set( renderContext.id, baseOffset );
+
+		return baseOffset;
+
+	}
+
+	/**
+     * Begins a timestamp query for the specified render context.
+     * @param {Object} renderContext - The render context to begin timing for.
+     */
+	beginQuery( renderContext ) {
+
+		if ( ! this.trackTimestamp || this.isDisposed ) {
+
+			return;
+
+		}
+
+		const baseOffset = this.queryOffsets.get( renderContext.id );
+		if ( baseOffset == null ) {
+
+			return;
+
+		}
+
+		// Don't start a new query if there's an active one
+		if ( this.activeQuery !== null ) {
+
+			return;
+
+		}
+
+		const query = this.queries[ baseOffset ];
+		if ( ! query ) {
+
+			return;
+
+		}
+
+		try {
+
+			// Only begin if query is inactive
+			if ( this.queryStates.get( baseOffset ) === 'inactive' ) {
+
+				this.gl.beginQuery( this.ext.TIME_ELAPSED_EXT, query );
+				this.activeQuery = baseOffset;
+				this.queryStates.set( baseOffset, 'started' );
+
+			}
+
+		} catch ( error ) {
+
+			console.error( 'Error in beginQuery:', error );
+			this.activeQuery = null;
+			this.queryStates.set( baseOffset, 'inactive' );
+
+		}
+
+	}
+
+	/**
+     * Ends the active timestamp query for the specified render context.
+     * @param {Object} renderContext - The render context to end timing for.
+     * @param {string} renderContext.id - Unique identifier for the render context.
+     */
+	endQuery( renderContext ) {
+
+		if ( ! this.trackTimestamp || this.isDisposed ) {
+
+			return;
+
+		}
+
+		const baseOffset = this.queryOffsets.get( renderContext.id );
+		if ( baseOffset == null ) {
+
+			return;
+
+		}
+
+		// Only end if this is the active query
+		if ( this.activeQuery !== baseOffset ) {
+
+			return;
+
+		}
+
+		try {
+
+			this.gl.endQuery( this.ext.TIME_ELAPSED_EXT );
+			this.queryStates.set( baseOffset, 'ended' );
+			this.activeQuery = null;
+
+		} catch ( error ) {
+
+			console.error( 'Error in endQuery:', error );
+			// Reset state on error
+			this.queryStates.set( baseOffset, 'inactive' );
+			this.activeQuery = null;
+
+		}
+
+	}
+
+	/**
+     * Asynchronously resolves all completed queries and returns the total duration.
+     * @returns {Promise<number>} The total duration in milliseconds, or the last valid value if resolution fails.
+     */
+	async resolveQueriesAsync() {
+
+		if ( ! this.trackTimestamp || this.pendingResolve ) {
+
+			return this.lastValue;
+
+		}
+
+		this.pendingResolve = true;
+
+		try {
+
+			// Wait for all ended queries to complete
+			const resolvePromises = [];
+
+			for ( const [ baseOffset, state ] of this.queryStates ) {
+
+				if ( state === 'ended' ) {
+
+					const query = this.queries[ baseOffset ];
+					resolvePromises.push( this.resolveQuery( query ) );
+
+				}
+
+			}
+
+			if ( resolvePromises.length === 0 ) {
+
+				return this.lastValue;
+
+			}
+
+			const results = await Promise.all( resolvePromises );
+			const totalDuration = results.reduce( ( acc, val ) => acc + val, 0 );
+
+			// Store the last valid result
+			this.lastValue = totalDuration;
+
+			// Reset states
+			this.currentQueryIndex = 0;
+			this.queryOffsets.clear();
+			this.queryStates.clear();
+			this.activeQuery = null;
+
+			return totalDuration;
+
+		} catch ( error ) {
+
+			console.error( 'Error resolving queries:', error );
+			return this.lastValue;
+
+		} finally {
+
+			this.pendingResolve = false;
+
+		}
+
+	}
+
+	/**
+     * Resolves a single query, checking for completion and disjoint operation.
+     * @private
+     * @param {WebGLQuery} query - The query object to resolve.
+     * @returns {Promise<number>} The elapsed time in milliseconds.
+     */
+	async resolveQuery( query ) {
+
+		return new Promise( ( resolve ) => {
+
+			if ( this.isDisposed ) {
+
+				resolve( this.lastValue );
+				return;
+
+			}
+
+			let timeoutId;
+			let isResolved = false;
+
+			const cleanup = () => {
+
+				if ( timeoutId ) {
+
+					clearTimeout( timeoutId );
+					timeoutId = null;
+
+				}
+
+			};
+
+			const finalizeResolution = ( value ) => {
+
+				if ( ! isResolved ) {
+
+					isResolved = true;
+					cleanup();
+					resolve( value );
+
+				}
+
+			};
+
+			const checkQuery = () => {
+
+				if ( this.isDisposed ) {
+
+					finalizeResolution( this.lastValue );
+					return;
+
+				}
+
+				try {
+
+					// Check if the GPU timer was disjoint (i.e., timing was unreliable)
+					const disjoint = this.gl.getParameter( this.ext.GPU_DISJOINT_EXT );
+					if ( disjoint ) {
+
+						finalizeResolution( this.lastValue );
+						return;
+
+					}
+
+					const available = this.gl.getQueryParameter( query, this.gl.QUERY_RESULT_AVAILABLE );
+					if ( ! available ) {
+
+						timeoutId = setTimeout( checkQuery, 1 );
+						return;
+
+					}
+
+					const elapsed = this.gl.getQueryParameter( query, this.gl.QUERY_RESULT );
+					resolve( Number( elapsed ) / 1e6 ); // Convert nanoseconds to milliseconds
+
+				} catch ( error ) {
+
+					console.error( 'Error checking query:', error );
+					resolve( this.lastValue );
+
+				}
+
+			};
+
+			checkQuery();
+
+		} );
+
+	}
+
+	/**
+     * Releases all resources held by this query pool.
+     * This includes deleting all query objects and clearing internal state.
+     */
+	dispose() {
+
+		if ( this.isDisposed ) {
+
+			return;
+
+		}
+
+		this.isDisposed = true;
+
+		if ( ! this.trackTimestamp ) return;
+
+		for ( const query of this.queries ) {
+
+			this.gl.deleteQuery( query );
+
+		}
+
+		this.queries = [];
+		this.queryStates.clear();
+		this.queryOffsets.clear();
+		this.lastValue = 0;
+		this.activeQuery = null;
+
+	}
+
+}
+
 /**
  * A backend implementation targeting WebGL 2.
  *
@@ -56003,7 +57469,14 @@ class WebGLBackend extends Backend {
 
 		const parameters = this.parameters;
 
-		const glContext = ( parameters.context !== undefined ) ? parameters.context : renderer.domElement.getContext( 'webgl2' );
+		const contextAttributes = {
+			antialias: false, // MSAA is applied via a custom renderbuffer
+			alpha: true, // always true for performance reasons
+			depth: false, // depth and stencil are set to false since the engine always renders into a framebuffer target first
+			stencil: false
+		};
+
+		const glContext = ( parameters.context !== undefined ) ? parameters.context : renderer.domElement.getContext( 'webgl2', contextAttributes );
 
 	 	function onContextLost( event ) {
 
@@ -56116,6 +57589,41 @@ class WebGLBackend extends Backend {
 	}
 
 	/**
+	 * Configures the given XR render target with external textures.
+	 *
+	 * This method is only relevant when using the WebXR Layers API.
+	 *
+	 * @param {XRRenderTarget} renderTarget - The XR render target.
+	 * @param {WebGLTexture} colorTexture - A native color texture.
+	 * @param {WebGLTexture?} [depthTexture=null] - A native depth texture.
+	 */
+	setXRRenderTargetTextures( renderTarget, colorTexture, depthTexture = null ) {
+
+		const gl = this.gl;
+
+		this.set( renderTarget.texture, { textureGPU: colorTexture, glInternalFormat: gl.RGBA8 } ); // see #24698 why RGBA8 and not SRGB8_ALPHA8 is used
+
+		if ( depthTexture !== null ) {
+
+			const glInternalFormat = renderTarget.stencilBuffer ? gl.DEPTH24_STENCIL8 : gl.DEPTH_COMPONENT24;
+
+			this.set( renderTarget.depthTexture, { textureGPU: depthTexture, glInternalFormat: glInternalFormat } );
+
+			renderTarget.autoAllocateDepthBuffer = false;
+
+			// The multisample_render_to_texture extension doesn't work properly if there
+			// are midframe flushes and an external depth texture.
+			if ( this.extensions.has( 'WEBGL_multisampled_render_to_texture' ) === true ) {
+
+				console.warn( 'THREE.WebGLBackend: Render-to-texture extension was disabled because an external texture was provided' );
+
+			}
+
+		}
+
+	}
+
+	/**
 	 * Inits a time stamp query for the given render context.
 	 *
 	 * @param {RenderContext} renderContext - The render context.
@@ -56124,29 +57632,22 @@ class WebGLBackend extends Backend {
 
 		if ( ! this.disjoint || ! this.trackTimestamp ) return;
 
-		const renderContextData = this.get( renderContext );
+		const type = renderContext.isComputeNode ? 'compute' : 'render';
 
-		if ( this.queryRunning ) {
+		if ( ! this.timestampQueryPool[ type ] ) {
 
-		  if ( ! renderContextData.queryQueue ) renderContextData.queryQueue = [];
-		  renderContextData.queryQueue.push( renderContext );
-		  return;
-
-		}
-
-		if ( renderContextData.activeQuery ) {
-
-		  this.gl.endQuery( this.disjoint.TIME_ELAPSED_EXT );
-		  renderContextData.activeQuery = null;
+			// TODO: Variable maxQueries?
+			this.timestampQueryPool[ type ] = new WebGLTimestampQueryPool( this.gl, type, 2048 );
 
 		}
 
-		renderContextData.activeQuery = this.gl.createQuery();
+		const timestampQueryPool = this.timestampQueryPool[ type ];
 
-		if ( renderContextData.activeQuery !== null ) {
+		const baseOffset = timestampQueryPool.allocateQueriesForContext( renderContext );
 
-		  this.gl.beginQuery( this.disjoint.TIME_ELAPSED_EXT, renderContextData.activeQuery );
-		  this.queryRunning = true;
+		if ( baseOffset !== null ) {
+
+			timestampQueryPool.beginQuery( renderContext );
 
 		}
 
@@ -56163,64 +57664,13 @@ class WebGLBackend extends Backend {
 
 		if ( ! this.disjoint || ! this.trackTimestamp ) return;
 
-		const renderContextData = this.get( renderContext );
+		const type = renderContext.isComputeNode ? 'compute' : 'render';
+		const timestampQueryPool = this.timestampQueryPool[ type ];
 
-		if ( renderContextData.activeQuery ) {
-
-		  this.gl.endQuery( this.disjoint.TIME_ELAPSED_EXT );
-
-		  if ( ! renderContextData.gpuQueries ) renderContextData.gpuQueries = [];
-		  renderContextData.gpuQueries.push( { query: renderContextData.activeQuery } );
-		  renderContextData.activeQuery = null;
-		  this.queryRunning = false;
-
-		  if ( renderContextData.queryQueue && renderContextData.queryQueue.length > 0 ) {
-
-				const nextRenderContext = renderContextData.queryQueue.shift();
-				this.initTimestampQuery( nextRenderContext );
-
-			}
-
-		}
+		timestampQueryPool.endQuery( renderContext );
 
 	}
 
-	/**
-	 * Resolves the time stamp for the given render context and type.
-	 *
-	 * @async
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {String} type - The render context.
-	 * @return {Promise} A Promise that resolves when the time stamp has been computed.
-	 */
-	async resolveTimestampAsync( renderContext, type = 'render' ) {
-
-		if ( ! this.disjoint || ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-		if ( ! renderContextData.gpuQueries ) renderContextData.gpuQueries = [];
-
-		for ( let i = 0; i < renderContextData.gpuQueries.length; i ++ ) {
-
-		  const queryInfo = renderContextData.gpuQueries[ i ];
-		  const available = this.gl.getQueryParameter( queryInfo.query, this.gl.QUERY_RESULT_AVAILABLE );
-		  const disjoint = this.gl.getParameter( this.disjoint.GPU_DISJOINT_EXT );
-
-		  if ( available && ! disjoint ) {
-
-				const elapsed = this.gl.getQueryParameter( queryInfo.query, this.gl.QUERY_RESULT );
-				const duration = Number( elapsed ) / 1000000; // Convert nanoseconds to milliseconds
-				this.gl.deleteQuery( queryInfo.query );
-				renderContextData.gpuQueries.splice( i, 1 ); // Remove the processed query
-				i --;
-				this.renderer.info.updateTimestamp( type, duration );
-
-			}
-
-		}
-
-	}
 
 	/**
 	 * Returns the backend's rendering context.
@@ -56346,7 +57796,7 @@ class WebGLBackend extends Backend {
 
 			const { samples } = renderContext.renderTarget;
 
-			if ( samples > 0 ) {
+			if ( samples > 0 && this._useMultisampledRTT( renderContext.renderTarget ) === false ) {
 
 				const fb = renderTargetContextData.framebuffers[ renderContext.getCacheKey() ];
 
@@ -56896,12 +58346,13 @@ class WebGLBackend extends Backend {
 
 		};
 
-		if ( renderObject.camera.isArrayCamera ) {
+		if ( renderObject.camera.isArrayCamera && renderObject.camera.cameras.length > 0 ) {
 
 			const cameraData = this.get( renderObject.camera );
 			const cameras = renderObject.camera.cameras;
+			const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' ).bindings[ 0 ];
 
-			if ( cameraData.indexesGPU === undefined ) {
+			if ( cameraData.indexesGPU === undefined || cameraData.indexesGPU.length !== cameras.length ) {
 
 				const data = new Uint32Array( [ 0, 0, 0, 0 ] );
 				const indexesGPU = [];
@@ -56923,7 +58374,6 @@ class WebGLBackend extends Backend {
 
 			}
 
-			const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' ).bindings[ 0 ];
 			const cameraIndexData = this.get( cameraIndex );
 			const pixelRatio = this.renderer.getPixelRatio();
 
@@ -57701,9 +59151,12 @@ class WebGLBackend extends Backend {
 			const isRenderTarget3D = renderTarget.isRenderTarget3D === true;
 			const isRenderTargetArray = renderTarget.isRenderTargetArray === true;
 			const isXRRenderTarget = renderTarget.isXRRenderTarget === true;
+			const hasExternalTextures = ( isXRRenderTarget === true && renderTarget.hasExternalTextures === true );
 
 			let msaaFb = renderTargetContextData.msaaFrameBuffer;
 			let depthRenderbuffer = renderTargetContextData.depthRenderbuffer;
+			const multisampledRTTExt = this.extensions.get( 'WEBGL_multisampled_render_to_texture' );
+			const useMultisampledRTT = this._useMultisampledRTT( renderTarget );
 
 			const cacheKey = getCacheKey( descriptor );
 
@@ -57715,7 +59168,7 @@ class WebGLBackend extends Backend {
 
 				fb = renderTargetContextData.cubeFramebuffers[ cacheKey ];
 
-			} else if ( isXRRenderTarget ) {
+			} else if ( isXRRenderTarget && hasExternalTextures === false ) {
 
 				fb = this._xrFamebuffer;
 
@@ -57766,11 +59219,17 @@ class WebGLBackend extends Backend {
 
 						} else {
 
-							gl.framebufferTexture2D( gl.FRAMEBUFFER, attachment, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+							if ( useMultisampledRTT ) {
+
+								multisampledRTTExt.framebufferTexture2DMultisampleEXT( gl.FRAMEBUFFER, attachment, gl.TEXTURE_2D, textureData.textureGPU, 0, samples );
+
+							} else {
+
+								gl.framebufferTexture2D( gl.FRAMEBUFFER, attachment, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+
+							}
 
 						}
-
-
 
 					}
 
@@ -57778,20 +59237,88 @@ class WebGLBackend extends Backend {
 
 				}
 
-				if ( descriptor.depthTexture !== null ) {
+				if ( renderTarget.isXRRenderTarget && renderTarget.autoAllocateDepthBuffer === true ) {
 
-					const textureData = this.get( descriptor.depthTexture );
+					const renderbuffer = gl.createRenderbuffer();
+					this.textureUtils.setupRenderBufferStorage( renderbuffer, descriptor, 0, useMultisampledRTT );
+					renderTargetContextData.xrDepthRenderbuffer = renderbuffer;
+
+				} else {
+
+					if ( descriptor.depthTexture !== null ) {
+
+						const textureData = this.get( descriptor.depthTexture );
+						const depthStyle = stencilBuffer ? gl.DEPTH_STENCIL_ATTACHMENT : gl.DEPTH_ATTACHMENT;
+						textureData.renderTarget = descriptor.renderTarget;
+						textureData.cacheKey = cacheKey; // required for copyTextureToTexture()
+
+						if ( useMultisampledRTT ) {
+
+							multisampledRTTExt.framebufferTexture2DMultisampleEXT( gl.FRAMEBUFFER, depthStyle, gl.TEXTURE_2D, textureData.textureGPU, 0, samples );
+
+						} else {
+
+							gl.framebufferTexture2D( gl.FRAMEBUFFER, depthStyle, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+
+						}
+
+					}
+
+				}
+
+			} else {
+
+				// rebind external XR textures
+
+				if ( isXRRenderTarget && hasExternalTextures ) {
+
+					state.bindFramebuffer( gl.FRAMEBUFFER, fb );
+
+					// rebind color
+
+					const textureData = this.get( descriptor.textures[ 0 ] );
+
+					if ( useMultisampledRTT ) {
+
+						multisampledRTTExt.framebufferTexture2DMultisampleEXT( gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, textureData.textureGPU, 0, samples );
+
+					} else {
+
+						gl.framebufferTexture2D( gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+
+					}
+
+					// rebind depth
+
 					const depthStyle = stencilBuffer ? gl.DEPTH_STENCIL_ATTACHMENT : gl.DEPTH_ATTACHMENT;
-					textureData.renderTarget = descriptor.renderTarget;
-					textureData.cacheKey = cacheKey; // required for copyTextureToTexture()
 
-					gl.framebufferTexture2D( gl.FRAMEBUFFER, depthStyle, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+					if ( renderTarget.autoAllocateDepthBuffer === true ) {
+
+						const renderbuffer = renderTargetContextData.xrDepthRenderbuffer;
+						gl.bindRenderbuffer( gl.RENDERBUFFER, renderbuffer );
+						gl.framebufferRenderbuffer( gl.FRAMEBUFFER, depthStyle, gl.RENDERBUFFER, renderbuffer );
+
+					} else {
+
+						const textureData = this.get( descriptor.depthTexture );
+
+						if ( useMultisampledRTT ) {
+
+							multisampledRTTExt.framebufferTexture2DMultisampleEXT( gl.FRAMEBUFFER, depthStyle, gl.TEXTURE_2D, textureData.textureGPU, 0, samples );
+
+						} else {
+
+							gl.framebufferTexture2D( gl.FRAMEBUFFER, depthStyle, gl.TEXTURE_2D, textureData.textureGPU, 0 );
+
+						}
+
+					}
 
 				}
 
 			}
 
-			if ( samples > 0 ) {
+			if ( samples > 0 && useMultisampledRTT === false ) {
 
 				if ( msaaFb === undefined ) {
 
@@ -57835,7 +59362,7 @@ class WebGLBackend extends Backend {
 					if ( depthRenderbuffer === undefined ) {
 
 						depthRenderbuffer = gl.createRenderbuffer();
-						this.textureUtils.setupRenderBufferStorage( depthRenderbuffer, descriptor );
+						this.textureUtils.setupRenderBufferStorage( depthRenderbuffer, descriptor, samples );
 
 						renderTargetContextData.depthRenderbuffer = depthRenderbuffer;
 
@@ -58097,9 +59624,26 @@ class WebGLBackend extends Backend {
 	}
 
 	/**
+	 * Returns `true` if the `WEBGL_multisampled_render_to_texture` extension
+	 * should be used when MSAA is enabled.
+	 *
+	 * @private
+	 * @param {RenderTarget} renderTarget - The render target that should be multisampled.
+	 * @return {Boolean} Whether to use the `WEBGL_multisampled_render_to_texture` extension for MSAA or not.
+	 */
+	_useMultisampledRTT( renderTarget ) {
+
+		return renderTarget.samples > 0 && this.extensions.has( 'WEBGL_multisampled_render_to_texture' ) === true && renderTarget.autoAllocateDepthBuffer !== false;
+
+	}
+
+	/**
 	 * Frees internal resources.
 	 */
 	dispose() {
+
+		const extension = this.extensions.get( 'WEBGL_lose_context' );
+		if ( extension ) extension.loseContext();
 
 		this.renderer.domElement.removeEventListener( 'webglcontextlost', this._onContextLost );
 
@@ -61047,6 +62591,19 @@ class WGSLNodeBuilder extends NodeBuilder {
 	}
 
 	/**
+	 * Generates the array declaration string.
+	 *
+	 * @param {String} type - The type.
+	 * @param {Number?} [count] - The count.
+	 * @return {String} The generated value as a shader string.
+	 */
+	generateArrayDeclaration( type, count ) {
+
+		return `array< ${ this.getType( type ) }, ${ count } >`;
+
+	}
+
+	/**
 	 * Generates a WGSL variable that holds the texture dimension of the given texture.
 	 * It also returns information about the the number of layers (elements) of an arrayed
 	 * texture as well as the cube face count of cube textures.
@@ -61403,7 +62960,13 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 			} else if ( type === 'buffer' || type === 'storageBuffer' || type === 'indirectStorageBuffer' ) {
 
-				return `NodeBuffer_${ node.id }.${name}`;
+				if ( this.isCustomStruct( node ) ) {
+
+					return name;
+
+				}
+
+				return name + '.value';
 
 			} else {
 
@@ -61544,7 +63107,7 @@ class WGSLNodeBuilder extends NodeBuilder {
 
 				if ( ( shaderStage === 'fragment' || shaderStage === 'compute' ) && this.isUnfilterable( node.value ) === false && texture.store === false ) {
 
-					const sampler = new NodeSampler( `${uniformNode.name}_sampler`, uniformNode.node, group );
+					const sampler = new NodeSampler( `${ uniformNode.name }_sampler`, uniformNode.node, group );
 					sampler.setVisibility( gpuShaderStageLib[ shaderStage ] );
 
 					bindings.push( sampler, texture );
@@ -61569,6 +63132,8 @@ class WGSLNodeBuilder extends NodeBuilder {
 				bindings.push( buffer );
 
 				uniformGPU = buffer;
+
+				uniformNode.name = name ? name : 'NodeBuffer_' + uniformNode.id;
 
 			} else {
 
@@ -62069,18 +63634,22 @@ ${ flowData.code }
 	getStructMembers( struct ) {
 
 		const snippets = [];
-		const members = struct.getMemberTypes();
 
-		for ( let i = 0; i < members.length; i ++ ) {
+		for ( const member of struct.members ) {
 
-			const member = members[ i ];
-			snippets.push( `\t@location( ${i} ) m${i} : ${ member }<f32>` );
+			const prefix = struct.output ? '@location( ' + member.index + ' ) ' : '';
+
+			let type = this.getType( member.type );
+
+			if ( member.atomic ) {
+
+				type = 'atomic< ' + type + ' >';
+
+			}
+
+			snippets.push( `\t${ prefix + member.name } : ${ type }` );
 
 		}
-
-		const builtins = this.getBuiltins( 'output' );
-
-		if ( builtins ) snippets.push( '\t' + builtins );
 
 		return snippets.join( ',\n' );
 
@@ -62094,26 +63663,29 @@ ${ flowData.code }
 	 */
 	getStructs( shaderStage ) {
 
-		const snippets = [];
+		let result = '';
+
 		const structs = this.structs[ shaderStage ];
 
-		for ( let index = 0, length = structs.length; index < length; index ++ ) {
+		if ( structs.length > 0 ) {
 
-			const struct = structs[ index ];
-			const name = struct.name;
+			const snippets = [];
 
-			let snippet = `\struct ${ name } {\n`;
-			snippet += this.getStructMembers( struct );
-			snippet += '\n}';
+			for ( const struct of structs ) {
 
+				let snippet = `struct ${ struct.name } {\n`;
+				snippet += this.getStructMembers( struct );
+				snippet += '\n};';
 
-			snippets.push( snippet );
+				snippets.push( snippet );
 
-			snippets.push( `\nvar<private> output : ${ name };\n\n` );
+			}
+
+			result = '\n' + snippets.join( '\n\n' ) + '\n';
 
 		}
 
-		return snippets.join( '\n\n' );
+		return result;
 
 	}
 
@@ -62122,11 +63694,24 @@ ${ flowData.code }
 	 *
 	 * @param {String} type - The variable's type.
 	 * @param {String} name - The variable's name.
+	 * @param {Number?} [count=null] - The array length.
 	 * @return {String} The WGSL snippet that defines a variable.
 	 */
-	getVar( type, name ) {
+	getVar( type, name, count = null ) {
 
-		return `var ${ name } : ${ this.getType( type ) }`;
+		let snippet = `var ${ name } : `;
+
+		if ( count !== null ) {
+
+			snippet += this.generateArrayDeclaration( type, count );
+
+		} else {
+
+			snippet += this.getType( type );
+
+		}
+
+		return snippet;
 
 	}
 
@@ -62145,7 +63730,7 @@ ${ flowData.code }
 
 			for ( const variable of vars ) {
 
-				snippets.push( `\t${ this.getVar( variable.type, variable.name ) };` );
+				snippets.push( `\t${ this.getVar( variable.type, variable.name, variable.count ) };` );
 
 			}
 
@@ -62210,6 +63795,12 @@ ${ flowData.code }
 		const code = snippets.join( ',\n\t' );
 
 		return shaderStage === 'vertex' ? this._getWGSLStruct( 'VaryingsStruct', '\t' + code ) : code;
+
+	}
+
+	isCustomStruct( nodeUniform ) {
+
+		return nodeUniform.value.isStorageBufferAttribute && nodeUniform.node.structTypeNode !== null;
 
 	}
 
@@ -62294,7 +63885,7 @@ ${ flowData.code }
 
 					const componentPrefix = this.getComponentTypeFromTexture( texture ).charAt( 0 );
 
-					textureType = `texture${multisampled}_2d<${ componentPrefix }32>`;
+					textureType = `texture${ multisampled }_2d<${ componentPrefix }32>`;
 
 				}
 
@@ -62303,15 +63894,23 @@ ${ flowData.code }
 			} else if ( uniform.type === 'buffer' || uniform.type === 'storageBuffer' || uniform.type === 'indirectStorageBuffer' ) {
 
 				const bufferNode = uniform.node;
-				const bufferType = this.getType( bufferNode.bufferType );
+				const bufferType = this.getType( bufferNode.getNodeType( this ) );
 				const bufferCount = bufferNode.bufferCount;
-
 				const bufferCountSnippet = bufferCount > 0 && uniform.type === 'buffer' ? ', ' + bufferCount : '';
-				const bufferTypeSnippet = bufferNode.isAtomic ? `atomic<${bufferType}>` : `${bufferType}`;
-				const bufferSnippet = `\t${ uniform.name } : array< ${ bufferTypeSnippet }${ bufferCountSnippet } >\n`;
 				const bufferAccessMode = bufferNode.isStorageBufferNode ? `storage, ${ this.getStorageAccess( bufferNode, shaderStage ) }` : 'uniform';
 
-				bufferSnippets.push( this._getWGSLStructBinding( 'NodeBuffer_' + bufferNode.id, bufferSnippet, bufferAccessMode, uniformIndexes.binding ++, uniformIndexes.group ) );
+				if ( this.isCustomStruct( uniform ) ) {
+
+					bufferSnippets.push( `@binding( ${ uniformIndexes.binding ++ } ) @group( ${ uniformIndexes.group } ) var<${ bufferAccessMode }> ${ uniform.name } : ${ bufferType };` );
+
+				} else {
+
+					const bufferTypeSnippet = bufferNode.isAtomic ? `atomic<${ bufferType }>` : `${ bufferType }`;
+					const bufferSnippet = `\tvalue : array< ${ bufferTypeSnippet }${ bufferCountSnippet } >`;
+
+					bufferSnippets.push( this._getWGSLStructBinding( uniform.name, bufferSnippet, bufferAccessMode, uniformIndexes.binding ++, uniformIndexes.group ) );
+
+				}
 
 			} else {
 
@@ -62356,6 +63955,8 @@ ${ flowData.code }
 		this.sortBindingGroups();
 
 		for ( const shaderStage in shadersData ) {
+
+			this.shaderStage = shaderStage;
 
 			const stageData = shadersData[ shaderStage ];
 			stageData.uniforms = this.getUniforms( shaderStage );
@@ -62405,7 +64006,8 @@ ${ flowData.code }
 
 						if ( isOutputStruct ) {
 
-							stageData.returnType = outputNode.nodeType;
+							stageData.returnType = outputNode.getNodeType( this );
+							stageData.structs += 'var<private> output : ' + stageData.returnType + ';';
 
 							flow += `return ${ flowSlotData.result };`;
 
@@ -62419,7 +64021,7 @@ ${ flowData.code }
 
 							stageData.returnType = 'OutputStruct';
 							stageData.structs += this._getWGSLStruct( 'OutputStruct', structSnippet );
-							stageData.structs += '\nvar<private> output : OutputStruct;\n\n';
+							stageData.structs += '\nvar<private> output : OutputStruct;';
 
 							flow += `output.color = ${ flowSlotData.result };\n\n\treturn output;`;
 
@@ -62433,8 +64035,9 @@ ${ flowData.code }
 
 			stageData.flow = flow;
 
-
 		}
+
+		this.shaderStage = null;
 
 		if ( this.material !== null ) {
 
@@ -62573,6 +64176,9 @@ ${ flowData.code }
 // directives
 ${shaderData.directives}
 
+// structs
+${shaderData.structs}
+
 // uniforms
 ${shaderData.uniforms}
 
@@ -62612,11 +64218,11 @@ fn main( ${shaderData.attributes} ) -> VaryingsStruct {
 // global
 ${ diagnostics }
 
-// uniforms
-${shaderData.uniforms}
-
 // structs
 ${shaderData.structs}
+
+// uniforms
+${shaderData.uniforms}
 
 // codes
 ${shaderData.codes}
@@ -62654,6 +64260,9 @@ var<private> instanceIndex : u32;
 
 // locals
 ${shaderData.scopedArrays}
+
+// structs
+${shaderData.structs}
 
 // uniforms
 ${shaderData.uniforms}
@@ -62712,8 +64321,8 @@ ${vars}
 		const structSnippet = this._getWGSLStruct( structName, vars );
 
 		return `${structSnippet}
-@binding( ${binding} ) @group( ${group} )
-var<${access}> ${name} : ${structName};`;
+@binding( ${ binding } ) @group( ${ group } )
+var<${access}> ${ name } : ${ structName };`;
 
 	}
 
@@ -64539,6 +66148,276 @@ class WebGPUPipelineUtils {
 
 }
 
+/**
+ * Manages a pool of WebGPU timestamp queries for performance measurement.
+ * Extends the base TimestampQueryPool to provide WebGPU-specific implementation.
+ * @extends TimestampQueryPool
+ */
+class WebGPUTimestampQueryPool extends TimestampQueryPool {
+
+	/**
+     * Creates a new WebGPU timestamp query pool.
+     * @param {GPUDevice} device - The WebGPU device to create queries on.
+     * @param {string} type - The type identifier for this query pool.
+     * @param {number} [maxQueries=2048] - Maximum number of queries this pool can hold.
+     */
+	constructor( device, type, maxQueries = 2048 ) {
+
+		super( maxQueries );
+		this.device = device;
+		this.type = type;
+
+		this.querySet = this.device.createQuerySet( {
+			type: 'timestamp',
+			count: this.maxQueries,
+			label: `queryset_global_timestamp_${type}`
+		} );
+
+		const bufferSize = this.maxQueries * 8;
+		this.resolveBuffer = this.device.createBuffer( {
+			label: `buffer_timestamp_resolve_${type}`,
+			size: bufferSize,
+			usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC
+		} );
+
+		this.resultBuffer = this.device.createBuffer( {
+			label: `buffer_timestamp_result_${type}`,
+			size: bufferSize,
+			usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ
+		} );
+
+	}
+
+	/**
+     * Allocates a pair of queries for a given render context.
+     * @param {Object} renderContext - The render context to allocate queries for.
+     * @returns {?number} The base offset for the allocated queries, or null if allocation failed.
+     */
+	allocateQueriesForContext( renderContext ) {
+
+		if ( ! this.trackTimestamp || this.isDisposed ) return null;
+
+		if ( this.currentQueryIndex + 2 > this.maxQueries ) {
+
+			warnOnce( `WebGPUTimestampQueryPool [${ this.type }]: Maximum number of queries exceeded, when using trackTimestamp it is necessary to resolves the queries via renderer.resolveTimestampsAsync( THREE.TimestampQuery.${ this.type.toUpperCase() } ).` );
+			return null;
+
+		}
+
+		const baseOffset = this.currentQueryIndex;
+		this.currentQueryIndex += 2;
+
+		this.queryOffsets.set( renderContext.id, baseOffset );
+		return baseOffset;
+
+	}
+
+	/**
+     * Asynchronously resolves all pending queries and returns the total duration.
+     * If there's already a pending resolve operation, returns that promise instead.
+     * @returns {Promise<number>} The total duration in milliseconds, or the last valid value if resolution fails.
+     */
+	async resolveQueriesAsync() {
+
+		if ( ! this.trackTimestamp || this.currentQueryIndex === 0 || this.isDisposed ) {
+
+			return this.lastValue;
+
+		}
+
+		if ( this.pendingResolve ) {
+
+			return this.pendingResolve;
+
+		}
+
+		this.pendingResolve = this._resolveQueries();
+
+		try {
+
+			const result = await this.pendingResolve;
+			return result;
+
+		} finally {
+
+			this.pendingResolve = null;
+
+		}
+
+	}
+
+	/**
+     * Internal method to resolve queries and calculate total duration.
+     * @private
+     * @returns {Promise<number>} The total duration in milliseconds.
+     */
+	async _resolveQueries() {
+
+		if ( this.isDisposed ) {
+
+			return this.lastValue;
+
+		}
+
+		try {
+
+			if ( this.resultBuffer.mapState !== 'unmapped' ) {
+
+				return this.lastValue;
+
+			}
+
+			const currentOffsets = new Map( this.queryOffsets );
+			const queryCount = this.currentQueryIndex;
+			const bytesUsed = queryCount * 8;
+
+			// Reset state before GPU work
+			this.currentQueryIndex = 0;
+			this.queryOffsets.clear();
+
+			const commandEncoder = this.device.createCommandEncoder();
+
+			commandEncoder.resolveQuerySet(
+				this.querySet,
+				0,
+				queryCount,
+				this.resolveBuffer,
+				0
+			);
+
+			commandEncoder.copyBufferToBuffer(
+				this.resolveBuffer,
+				0,
+				this.resultBuffer,
+				0,
+				bytesUsed
+			);
+
+			const commandBuffer = commandEncoder.finish();
+			this.device.queue.submit( [ commandBuffer ] );
+
+			if ( this.resultBuffer.mapState !== 'unmapped' ) {
+
+				return this.lastValue;
+
+			}
+
+			// Create and track the mapping operation
+			await this.resultBuffer.mapAsync( GPUMapMode.READ, 0, bytesUsed );
+
+			if ( this.isDisposed ) {
+
+				if ( this.resultBuffer.mapState === 'mapped' ) {
+
+					this.resultBuffer.unmap();
+
+				}
+
+				return this.lastValue;
+
+			}
+
+			const times = new BigUint64Array( this.resultBuffer.getMappedRange( 0, bytesUsed ) );
+			let totalDuration = 0;
+
+			for ( const [ , baseOffset ] of currentOffsets ) {
+
+				const startTime = times[ baseOffset ];
+				const endTime = times[ baseOffset + 1 ];
+				const duration = Number( endTime - startTime ) / 1e6;
+				totalDuration += duration;
+
+			}
+
+			this.resultBuffer.unmap();
+			this.lastValue = totalDuration;
+
+			return totalDuration;
+
+		} catch ( error ) {
+
+			console.error( 'Error resolving queries:', error );
+			if ( this.resultBuffer.mapState === 'mapped' ) {
+
+				this.resultBuffer.unmap();
+
+			}
+
+			return this.lastValue;
+
+		}
+
+	}
+
+	async dispose() {
+
+		if ( this.isDisposed ) {
+
+			return;
+
+		}
+
+		this.isDisposed = true;
+
+		// Wait for pending resolve operation
+		if ( this.pendingResolve ) {
+
+			try {
+
+				await this.pendingResolve;
+
+			} catch ( error ) {
+
+				console.error( 'Error waiting for pending resolve:', error );
+
+			}
+
+		}
+
+		// Ensure buffer is unmapped before destroying
+		if ( this.resultBuffer && this.resultBuffer.mapState === 'mapped' ) {
+
+			try {
+
+				this.resultBuffer.unmap();
+
+			} catch ( error ) {
+
+				console.error( 'Error unmapping buffer:', error );
+
+			}
+
+		}
+
+		// Destroy resources
+		if ( this.querySet ) {
+
+			this.querySet.destroy();
+			this.querySet = null;
+
+		}
+
+		if ( this.resolveBuffer ) {
+
+			this.resolveBuffer.destroy();
+			this.resolveBuffer = null;
+
+		}
+
+		if ( this.resultBuffer ) {
+
+			this.resultBuffer.destroy();
+			this.resultBuffer = null;
+
+		}
+
+		this.queryOffsets.clear();
+		this.pendingResolve = null;
+
+	}
+
+}
+
 /*// debugger tools
 import 'https://greggman.github.io/webgpu-avoid-redundant-state-setting/webgpu-check-redundant-state-setting.js';
 //*/
@@ -65245,8 +67124,6 @@ class WebGPUBackend extends Backend {
 
 		}
 
-		this.prepareTimestampBuffer( renderContext, renderContextData.encoder );
-
 		this.device.queue.submit( [ renderContextData.encoder.finish() ] );
 
 
@@ -65583,8 +67460,6 @@ class WebGPUBackend extends Backend {
 
 		groupData.passEncoderGPU.end();
 
-		this.prepareTimestampBuffer( computeGroup, groupData.cmdEncoderGPU );
-
 		this.device.queue.submit( [ groupData.cmdEncoderGPU.finish() ] );
 
 	}
@@ -65793,14 +67668,14 @@ class WebGPUBackend extends Backend {
 
 		};
 
-		if ( renderObject.camera.isArrayCamera ) {
+		if ( renderObject.camera.isArrayCamera && renderObject.camera.cameras.length > 0 ) {
 
 			const cameraData = this.get( renderObject.camera );
 			const cameras = renderObject.camera.cameras;
+			const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' );
 
-			if ( cameraData.indexesGPU === undefined ) {
+			if ( cameraData.indexesGPU === undefined || cameraData.indexesGPU.length !== cameras.length ) {
 
-				const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' );
 				const bindingsData = this.get( cameraIndex );
 				const indexesGPU = [];
 
@@ -65817,7 +67692,6 @@ class WebGPUBackend extends Backend {
 				}
 
 				cameraData.indexesGPU = indexesGPU; // TODO: Create a global library for this
-				cameraData.cameraIndex = cameraIndex;
 
 			}
 
@@ -65840,7 +67714,7 @@ class WebGPUBackend extends Backend {
 						context.viewportValue.maxDepth
 					);
 
-					passEncoderGPU.setBindGroup( cameraData.cameraIndex.index, cameraData.indexesGPU[ i ] );
+					passEncoderGPU.setBindGroup( cameraIndex.index, cameraData.indexesGPU[ i ] );
 
 					draw();
 
@@ -66062,106 +67936,27 @@ class WebGPUBackend extends Backend {
 
 		if ( ! this.trackTimestamp ) return;
 
-		const renderContextData = this.get( renderContext );
+		const type = renderContext.isComputeNode ? 'compute' : 'render';
 
-		// init query set if not exists
+		if ( ! this.timestampQueryPool[ type ] ) {
 
-		if ( ! renderContextData.timestampQuerySet ) {
-
-			const type = renderContext.isComputeNode ? 'compute' : 'render';
-
-			renderContextData.timestampQuerySet = this.device.createQuerySet( { type: 'timestamp', count: 2, label: `timestamp_${type}_${renderContext.id}` } );
+			// TODO: Variable maxQueries?
+			this.timestampQueryPool[ type ] = new WebGPUTimestampQueryPool( this.device, type, 2048 );
 
 		}
 
-		// augment descriptor
+		const timestampQueryPool = this.timestampQueryPool[ type ];
+
+		const baseOffset = timestampQueryPool.allocateQueriesForContext( renderContext );
 
 		descriptor.timestampWrites = {
-			querySet: renderContextData.timestampQuerySet,
-			beginningOfPassWriteIndex: 0, // Write timestamp in index 0 when pass begins.
-			endOfPassWriteIndex: 1, // Write timestamp in index 1 when pass ends.
-		};
+			querySet: timestampQueryPool.querySet,
+			beginningOfPassWriteIndex: baseOffset,
+			endOfPassWriteIndex: baseOffset + 1,
+		  };
 
 	}
 
-	/**
-	 * Prepares the timestamp buffer.
-	 *
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {GPUCommandEncoder} encoder - The command encoder.
-	 */
-	prepareTimestampBuffer( renderContext, encoder ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-
-		const size = 2 * BigUint64Array.BYTES_PER_ELEMENT;
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) {
-
-			renderContextData.currentTimestampQueryBuffers = {
-				resolveBuffer: this.device.createBuffer( {
-					label: 'timestamp resolve buffer',
-					size: size,
-					usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC,
-				} ),
-				resultBuffer: this.device.createBuffer( {
-					label: 'timestamp result buffer',
-					size: size,
-					usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
-				} )
-			};
-
-		}
-
-		const { resolveBuffer, resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-
-		encoder.resolveQuerySet( renderContextData.timestampQuerySet, 0, 2, resolveBuffer, 0 );
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			encoder.copyBufferToBuffer( resolveBuffer, 0, resultBuffer, 0, size );
-
-		}
-
-	}
-
-	/**
-	 * Resolves the time stamp for the given render context and type.
-	 *
-	 * @async
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {String} type - The render context.
-	 * @return {Promise} A Promise that resolves when the time stamp has been computed.
-	 */
-	async resolveTimestampAsync( renderContext, type = 'render' ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) return;
-
-		const { resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			await resultBuffer.mapAsync( GPUMapMode.READ );
-
-			const times = new BigUint64Array( resultBuffer.getMappedRange() );
-			const duration = Number( times[ 1 ] - times[ 0 ] ) / 1000000;
-
-
-			this.renderer.info.updateTimestamp( type, duration );
-
-			resultBuffer.unmap();
-
-		}
-
-	}
 
 	// node builder
 
@@ -66680,6 +68475,7 @@ class BasicNodeLibrary extends NodeLibrary {
  * This alternative version of {@link WebGPURenderer} only supports node materials.
  * So classes like `MeshBasicMaterial` are not compatible.
  *
+ * @private
  * @augments module:Renderer~Renderer
  */
 class WebGPURenderer extends Renderer {
@@ -66693,10 +68489,11 @@ class WebGPURenderer extends Renderer {
 	 * @param {Boolean} [parameters.depth=true] - Whether the default framebuffer should have a depth buffer or not.
 	 * @param {Boolean} [parameters.stencil=false] - Whether the default framebuffer should have a stencil buffer or not.
 	 * @param {Boolean} [parameters.antialias=false] - Whether MSAA as the default anti-aliasing should be enabled or not.
-	 * @param {Number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. Set this parameter to any other integer value than 0
-	 * to overwrite the default.
-	 * @param {Boolean} [parameters.forceWebGL=false] - If set to `true`, the renderer uses it
-	 * WebGL 2 backend no matter if WebGPU is supported or not.
+	 * @param {Number} [parameters.samples=0] - When `antialias` is `true`, `4` samples are used by default. Set this parameter to any other integer value than 0 to overwrite the default.
+	 * @param {Boolean} [parameters.forceWebGL=false] - If set to `true`, the renderer uses it WebGL 2 backend no matter if WebGPU is supported or not.
+	 * @param {Number} [parameters.outputType=undefined] - Texture type for output to canvas. By default, device's preferred format is used; other formats may incur overhead.
+	 * @param {Number} [parameters.colorBufferType=HalfFloatType] - Defines the type of color buffers. The default `HalfFloatType` is recommend for best
+	 * quality. To save memory and bandwidth, `UnsignedByteType` might be used. This will reduce rendering quality though.
 	 */
 	constructor( parameters = {} ) {
 
@@ -67586,4 +69383,4 @@ class ClippingGroup extends Group {
 
 }
 
-export { ACESFilmicToneMapping, AONode, AddEquation, AddOperation, AdditiveBlending, AgXToneMapping, AlphaFormat, AlwaysCompare, AlwaysDepth, AlwaysStencilFunc, AmbientLight, AmbientLightNode, AnalyticLightNode, ArrayCamera, ArrayElementNode, AssignNode, AttributeNode, BackSide, BasicEnvironmentNode, BasicShadowMap, BatchNode, BoxGeometry, BufferAttribute, BufferAttributeNode, BufferGeometry, BufferNode, BumpMapNode, BundleGroup, BypassNode, ByteType, CacheNode, Camera, CineonToneMapping, ClampToEdgeWrapping, ClippingGroup, CodeNode, Color, ColorManagement, ColorSpaceNode, ComputeNode, ConstNode, ContextNode, ConvertNode, CubeCamera, CubeReflectionMapping, CubeRefractionMapping, CubeTexture, CubeTextureNode, CubeUVReflectionMapping, CullFaceBack, CullFaceFront, CullFaceNone, CustomBlending, DataArrayTexture, DataTexture, DecrementStencilOp, DecrementWrapStencilOp, DepthFormat, DepthStencilFormat, DepthTexture, DirectionalLight, DirectionalLightNode, DoubleSide, DstAlphaFactor, DstColorFactor, DynamicDrawUsage, EnvironmentNode, EqualCompare, EqualDepth, EqualStencilFunc, EquirectUVNode, EquirectangularReflectionMapping, EquirectangularRefractionMapping, Euler, EventDispatcher, ExpressionNode, FileLoader, Float16BufferAttribute, Float32BufferAttribute, FloatType, FramebufferTexture, FrontFacingNode, FrontSide, Frustum, FunctionCallNode, FunctionNode, FunctionOverloadingNode, GLSLNodeParser, GreaterCompare, GreaterDepth, GreaterEqualCompare, GreaterEqualDepth, GreaterEqualStencilFunc, GreaterStencilFunc, Group, HalfFloatType, HemisphereLight, HemisphereLightNode, IESSpotLight, IESSpotLightNode, IncrementStencilOp, IncrementWrapStencilOp, IndexNode, IndirectStorageBufferAttribute, InstanceNode, InstancedBufferAttribute, InstancedInterleavedBuffer, InstancedMeshNode, IntType, InterleavedBuffer, InterleavedBufferAttribute, InvertStencilOp, IrradianceNode, JoinNode, KeepStencilOp, LessCompare, LessDepth, LessEqualCompare, LessEqualDepth, LessEqualStencilFunc, LessStencilFunc, LightProbe, LightProbeNode, Lighting, LightingContextNode, LightingModel, LightingNode, LightsNode, Line2NodeMaterial, LineBasicMaterial, LineBasicNodeMaterial, LineDashedMaterial, LineDashedNodeMaterial, LinearFilter, LinearMipMapLinearFilter, LinearMipmapLinearFilter, LinearMipmapNearestFilter, LinearSRGBColorSpace, LinearToneMapping, Loader, LoopNode, LuminanceAlphaFormat, LuminanceFormat, MRTNode, MatcapUVNode, Material, MaterialLoader, MaterialNode, MaterialReferenceNode, MathUtils, Matrix3, Matrix4, MaxEquation, MaxMipLevelNode, Mesh, MeshBasicMaterial, MeshBasicNodeMaterial, MeshLambertMaterial, MeshLambertNodeMaterial, MeshMatcapMaterial, MeshMatcapNodeMaterial, MeshNormalMaterial, MeshNormalNodeMaterial, MeshPhongMaterial, MeshPhongNodeMaterial, MeshPhysicalMaterial, MeshPhysicalNodeMaterial, MeshSSSNodeMaterial, MeshStandardMaterial, MeshStandardNodeMaterial, MeshToonMaterial, MeshToonNodeMaterial, MinEquation, MirroredRepeatWrapping, MixOperation, ModelNode, MorphNode, MultiplyBlending, MultiplyOperation, NearestFilter, NearestMipmapLinearFilter, NearestMipmapNearestFilter, NeutralToneMapping, NeverCompare, NeverDepth, NeverStencilFunc, NoBlending, NoColorSpace, NoToneMapping, Node, NodeAccess, NodeAttribute, NodeBuilder, NodeCache, NodeCode, NodeFrame, NodeFunctionInput, NodeLoader, NodeMaterial, NodeMaterialLoader, NodeMaterialObserver, NodeObjectLoader, NodeShaderStage, NodeType, NodeUniform, NodeUpdateType, NodeUtils, NodeVar, NodeVarying, NormalBlending, NormalMapNode, NotEqualCompare, NotEqualDepth, NotEqualStencilFunc, Object3D, Object3DNode, ObjectLoader, ObjectSpaceNormalMap, OneFactor, OneMinusDstAlphaFactor, OneMinusDstColorFactor, OneMinusSrcAlphaFactor, OneMinusSrcColorFactor, OrthographicCamera, OutputStructNode, PCFShadowMap, PMREMGenerator, PMREMNode, ParameterNode, PassNode, PerspectiveCamera, PhongLightingModel, PhysicalLightingModel, Plane, PointLight, PointLightNode, PointUVNode, PointsMaterial, PointsNodeMaterial, PostProcessing, PosterizeNode, PropertyNode, QuadMesh, RED_GREEN_RGTC2_Format, RED_RGTC1_Format, REVISION, RGBAFormat, RGBAIntegerFormat, RGBA_ASTC_10x10_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_BPTC_Format, RGBA_ETC2_EAC_Format, RGBA_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGBFormat, RGBIntegerFormat, RGB_ETC1_Format, RGB_ETC2_Format, RGB_PVRTC_2BPPV1_Format, RGB_PVRTC_4BPPV1_Format, RGB_S3TC_DXT1_Format, RGFormat, RGIntegerFormat, RTTNode, RangeNode, RectAreaLight, RectAreaLightNode, RedFormat, RedIntegerFormat, ReferenceNode, ReflectorNode, ReinhardToneMapping, RemapNode, RenderOutputNode, RenderTarget, RendererReferenceNode, RendererUtils, RepeatWrapping, ReplaceStencilOp, ReverseSubtractEquation, RotateNode, SIGNED_RED_GREEN_RGTC2_Format, SIGNED_RED_RGTC1_Format, SRGBColorSpace, SRGBTransfer, Scene, SceneNode, ScreenNode, ScriptableNode, ScriptableValueNode, SetNode, ShadowBaseNode, ShadowMaterial, ShadowNode, ShadowNodeMaterial, ShortType, SkinningNode, SphereGeometry, SplitNode, SpotLight, SpotLightNode, SpriteMaterial, SpriteNodeMaterial, SpriteSheetUVNode, SrcAlphaFactor, SrcAlphaSaturateFactor, SrcColorFactor, StackNode, StaticDrawUsage, StorageArrayElementNode, StorageBufferAttribute, StorageBufferNode, StorageInstancedBufferAttribute, StorageTexture, StorageTextureNode, SubtractEquation, SubtractiveBlending, TSL, TangentSpaceNormalMap, TempNode, Texture, Texture3DNode, TextureNode, TextureSizeNode, ToneMappingNode, ToonOutlinePassNode, TriplanarTexturesNode, UVMapping, Uint16BufferAttribute, Uint32BufferAttribute, UniformArrayNode, UniformGroupNode, UniformNode, UnsignedByteType, UnsignedInt248Type, UnsignedInt5999Type, UnsignedIntType, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedShortType, UserDataNode, VSMShadowMap, VarNode, VaryingNode, Vector2, Vector3, Vector4, VertexColorNode, ViewportDepthNode, ViewportDepthTextureNode, ViewportSharedTextureNode, ViewportTextureNode, VolumeNodeMaterial, WebGLCoordinateSystem, WebGLCubeRenderTarget, WebGPUCoordinateSystem, WebGPURenderer, WebXRController, ZeroFactor, ZeroStencilOp, createCanvasElement, defaultBuildStages, defaultShaderStages, shaderStages, vectorComponents };
+export { ACESFilmicToneMapping, AONode, AddEquation, AddOperation, AdditiveBlending, AgXToneMapping, AlphaFormat, AlwaysCompare, AlwaysDepth, AlwaysStencilFunc, AmbientLight, AmbientLightNode, AnalyticLightNode, ArrayCamera, ArrayElementNode, ArrayNode, AssignNode, AttributeNode, BackSide, BasicEnvironmentNode, BasicShadowMap, BatchNode, BoxGeometry, BufferAttribute, BufferAttributeNode, BufferGeometry, BufferNode, BumpMapNode, BundleGroup, BypassNode, ByteType, CacheNode, Camera, CineonToneMapping, ClampToEdgeWrapping, ClippingGroup, CodeNode, Color, ColorManagement, ColorSpaceNode, ComputeNode, ConstNode, ContextNode, ConvertNode, CubeCamera, CubeReflectionMapping, CubeRefractionMapping, CubeTexture, CubeTextureNode, CubeUVReflectionMapping, CullFaceBack, CullFaceFront, CullFaceNone, CustomBlending, DataArrayTexture, DataTexture, DecrementStencilOp, DecrementWrapStencilOp, DepthFormat, DepthStencilFormat, DepthTexture, DirectionalLight, DirectionalLightNode, DoubleSide, DstAlphaFactor, DstColorFactor, DynamicDrawUsage, EnvironmentNode, EqualCompare, EqualDepth, EqualStencilFunc, EquirectUVNode, EquirectangularReflectionMapping, EquirectangularRefractionMapping, Euler, EventDispatcher, ExpressionNode, FileLoader, Float16BufferAttribute, Float32BufferAttribute, FloatType, FramebufferTexture, FrontFacingNode, FrontSide, Frustum, FunctionCallNode, FunctionNode, FunctionOverloadingNode, GLSLNodeParser, GreaterCompare, GreaterDepth, GreaterEqualCompare, GreaterEqualDepth, GreaterEqualStencilFunc, GreaterStencilFunc, Group, HalfFloatType, HemisphereLight, HemisphereLightNode, IESSpotLight, IESSpotLightNode, IncrementStencilOp, IncrementWrapStencilOp, IndexNode, IndirectStorageBufferAttribute, InstanceNode, InstancedBufferAttribute, InstancedInterleavedBuffer, InstancedMeshNode, IntType, InterleavedBuffer, InterleavedBufferAttribute, InvertStencilOp, IrradianceNode, JoinNode, KeepStencilOp, LessCompare, LessDepth, LessEqualCompare, LessEqualDepth, LessEqualStencilFunc, LessStencilFunc, LightProbe, LightProbeNode, Lighting, LightingContextNode, LightingModel, LightingNode, LightsNode, Line2NodeMaterial, LineBasicMaterial, LineBasicNodeMaterial, LineDashedMaterial, LineDashedNodeMaterial, LinearFilter, LinearMipMapLinearFilter, LinearMipmapLinearFilter, LinearMipmapNearestFilter, LinearSRGBColorSpace, LinearToneMapping, Loader, LoopNode, LuminanceAlphaFormat, LuminanceFormat, MRTNode, MatcapUVNode, Material, MaterialLoader, MaterialNode, MaterialReferenceNode, MathUtils, Matrix2, Matrix3, Matrix4, MaxEquation, MaxMipLevelNode, MemberNode, Mesh, MeshBasicMaterial, MeshBasicNodeMaterial, MeshLambertMaterial, MeshLambertNodeMaterial, MeshMatcapMaterial, MeshMatcapNodeMaterial, MeshNormalMaterial, MeshNormalNodeMaterial, MeshPhongMaterial, MeshPhongNodeMaterial, MeshPhysicalMaterial, MeshPhysicalNodeMaterial, MeshSSSNodeMaterial, MeshStandardMaterial, MeshStandardNodeMaterial, MeshToonMaterial, MeshToonNodeMaterial, MinEquation, MirroredRepeatWrapping, MixOperation, ModelNode, MorphNode, MultiplyBlending, MultiplyOperation, NearestFilter, NearestMipmapLinearFilter, NearestMipmapNearestFilter, NeutralToneMapping, NeverCompare, NeverDepth, NeverStencilFunc, NoBlending, NoColorSpace, NoToneMapping, Node, NodeAccess, NodeAttribute, NodeBuilder, NodeCache, NodeCode, NodeFrame, NodeFunctionInput, NodeLoader, NodeMaterial, NodeMaterialLoader, NodeMaterialObserver, NodeObjectLoader, NodeShaderStage, NodeType, NodeUniform, NodeUpdateType, NodeUtils, NodeVar, NodeVarying, NormalBlending, NormalMapNode, NotEqualCompare, NotEqualDepth, NotEqualStencilFunc, Object3D, Object3DNode, ObjectLoader, ObjectSpaceNormalMap, OneFactor, OneMinusDstAlphaFactor, OneMinusDstColorFactor, OneMinusSrcAlphaFactor, OneMinusSrcColorFactor, OrthographicCamera, OutputStructNode, PCFShadowMap, PMREMGenerator, PMREMNode, ParameterNode, PassNode, PerspectiveCamera, PhongLightingModel, PhysicalLightingModel, Plane, PointLight, PointLightNode, PointUVNode, PointsMaterial, PointsNodeMaterial, PostProcessing, PosterizeNode, PropertyNode, QuadMesh, RED_GREEN_RGTC2_Format, RED_RGTC1_Format, REVISION, RGBAFormat, RGBAIntegerFormat, RGBA_ASTC_10x10_Format, RGBA_ASTC_10x5_Format, RGBA_ASTC_10x6_Format, RGBA_ASTC_10x8_Format, RGBA_ASTC_12x10_Format, RGBA_ASTC_12x12_Format, RGBA_ASTC_4x4_Format, RGBA_ASTC_5x4_Format, RGBA_ASTC_5x5_Format, RGBA_ASTC_6x5_Format, RGBA_ASTC_6x6_Format, RGBA_ASTC_8x5_Format, RGBA_ASTC_8x6_Format, RGBA_ASTC_8x8_Format, RGBA_BPTC_Format, RGBA_ETC2_EAC_Format, RGBA_PVRTC_2BPPV1_Format, RGBA_PVRTC_4BPPV1_Format, RGBA_S3TC_DXT1_Format, RGBA_S3TC_DXT3_Format, RGBA_S3TC_DXT5_Format, RGBFormat, RGBIntegerFormat, RGB_ETC1_Format, RGB_ETC2_Format, RGB_PVRTC_2BPPV1_Format, RGB_PVRTC_4BPPV1_Format, RGB_S3TC_DXT1_Format, RGFormat, RGIntegerFormat, RTTNode, RangeNode, RectAreaLight, RectAreaLightNode, RedFormat, RedIntegerFormat, ReferenceNode, ReflectorNode, ReinhardToneMapping, RemapNode, RenderOutputNode, RenderTarget, RendererReferenceNode, RendererUtils, RepeatWrapping, ReplaceStencilOp, ReverseSubtractEquation, RotateNode, SIGNED_RED_GREEN_RGTC2_Format, SIGNED_RED_RGTC1_Format, SRGBColorSpace, SRGBTransfer, Scene, SceneNode, ScreenNode, ScriptableNode, ScriptableValueNode, SetNode, ShadowBaseNode, ShadowMaterial, ShadowNode, ShadowNodeMaterial, ShortType, SkinningNode, SphereGeometry, SplitNode, SpotLight, SpotLightNode, SpriteMaterial, SpriteNodeMaterial, SpriteSheetUVNode, SrcAlphaFactor, SrcAlphaSaturateFactor, SrcColorFactor, StackNode, StaticDrawUsage, StorageArrayElementNode, StorageBufferAttribute, StorageBufferNode, StorageInstancedBufferAttribute, StorageTexture, StorageTextureNode, StructNode, StructTypeNode, SubtractEquation, SubtractiveBlending, TSL, TangentSpaceNormalMap, TempNode, Texture, Texture3DNode, TextureNode, TextureSizeNode, ToneMappingNode, ToonOutlinePassNode, TriplanarTexturesNode, UVMapping, Uint16BufferAttribute, Uint32BufferAttribute, UniformArrayNode, UniformGroupNode, UniformNode, UnsignedByteType, UnsignedInt248Type, UnsignedInt5999Type, UnsignedIntType, UnsignedShort4444Type, UnsignedShort5551Type, UnsignedShortType, UserDataNode, VSMShadowMap, VarNode, VaryingNode, Vector2, Vector3, Vector4, VertexColorNode, ViewportDepthNode, ViewportDepthTextureNode, ViewportSharedTextureNode, ViewportTextureNode, VolumeNodeMaterial, WebGLCoordinateSystem, WebGLCubeRenderTarget, WebGPUCoordinateSystem, WebGPURenderer, WebXRController, ZeroFactor, ZeroStencilOp, createCanvasElement, defaultBuildStages, defaultShaderStages, shaderStages, vectorComponents };

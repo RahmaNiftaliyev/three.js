@@ -14,6 +14,7 @@ import WebGPUPipelineUtils from './utils/WebGPUPipelineUtils.js';
 import WebGPUTextureUtils from './utils/WebGPUTextureUtils.js';
 
 import { WebGPUCoordinateSystem } from '../../constants.js';
+import WebGPUTimestampQueryPool from './utils/WebGPUTimestampQueryPool.js';
 
 /**
  * A backend implementation targeting WebGPU.
@@ -716,8 +717,6 @@ class WebGPUBackend extends Backend {
 
 		}
 
-		this.prepareTimestampBuffer( renderContext, renderContextData.encoder );
-
 		this.device.queue.submit( [ renderContextData.encoder.finish() ] );
 
 
@@ -1054,8 +1053,6 @@ class WebGPUBackend extends Backend {
 
 		groupData.passEncoderGPU.end();
 
-		this.prepareTimestampBuffer( computeGroup, groupData.cmdEncoderGPU );
-
 		this.device.queue.submit( [ groupData.cmdEncoderGPU.finish() ] );
 
 	}
@@ -1264,14 +1261,14 @@ class WebGPUBackend extends Backend {
 
 		};
 
-		if ( renderObject.camera.isArrayCamera ) {
+		if ( renderObject.camera.isArrayCamera && renderObject.camera.cameras.length > 0 ) {
 
 			const cameraData = this.get( renderObject.camera );
 			const cameras = renderObject.camera.cameras;
+			const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' );
 
-			if ( cameraData.indexesGPU === undefined ) {
+			if ( cameraData.indexesGPU === undefined || cameraData.indexesGPU.length !== cameras.length ) {
 
-				const cameraIndex = renderObject.getBindingGroup( 'cameraIndex' );
 				const bindingsData = this.get( cameraIndex );
 				const indexesGPU = [];
 
@@ -1288,7 +1285,6 @@ class WebGPUBackend extends Backend {
 				}
 
 				cameraData.indexesGPU = indexesGPU; // TODO: Create a global library for this
-				cameraData.cameraIndex = cameraIndex;
 
 			}
 
@@ -1311,7 +1307,7 @@ class WebGPUBackend extends Backend {
 						context.viewportValue.maxDepth
 					);
 
-					passEncoderGPU.setBindGroup( cameraData.cameraIndex.index, cameraData.indexesGPU[ i ] );
+					passEncoderGPU.setBindGroup( cameraIndex.index, cameraData.indexesGPU[ i ] );
 
 					draw();
 
@@ -1533,106 +1529,27 @@ class WebGPUBackend extends Backend {
 
 		if ( ! this.trackTimestamp ) return;
 
-		const renderContextData = this.get( renderContext );
+		const type = renderContext.isComputeNode ? 'compute' : 'render';
 
-		// init query set if not exists
+		if ( ! this.timestampQueryPool[ type ] ) {
 
-		if ( ! renderContextData.timestampQuerySet ) {
-
-			const type = renderContext.isComputeNode ? 'compute' : 'render';
-
-			renderContextData.timestampQuerySet = this.device.createQuerySet( { type: 'timestamp', count: 2, label: `timestamp_${type}_${renderContext.id}` } );
+			// TODO: Variable maxQueries?
+			this.timestampQueryPool[ type ] = new WebGPUTimestampQueryPool( this.device, type, 2048 );
 
 		}
 
-		// augment descriptor
+		const timestampQueryPool = this.timestampQueryPool[ type ];
+
+		const baseOffset = timestampQueryPool.allocateQueriesForContext( renderContext );
 
 		descriptor.timestampWrites = {
-			querySet: renderContextData.timestampQuerySet,
-			beginningOfPassWriteIndex: 0, // Write timestamp in index 0 when pass begins.
-			endOfPassWriteIndex: 1, // Write timestamp in index 1 when pass ends.
-		};
+			querySet: timestampQueryPool.querySet,
+			beginningOfPassWriteIndex: baseOffset,
+			endOfPassWriteIndex: baseOffset + 1,
+		  };
 
 	}
 
-	/**
-	 * Prepares the timestamp buffer.
-	 *
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {GPUCommandEncoder} encoder - The command encoder.
-	 */
-	prepareTimestampBuffer( renderContext, encoder ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-
-		const size = 2 * BigUint64Array.BYTES_PER_ELEMENT;
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) {
-
-			renderContextData.currentTimestampQueryBuffers = {
-				resolveBuffer: this.device.createBuffer( {
-					label: 'timestamp resolve buffer',
-					size: size,
-					usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC,
-				} ),
-				resultBuffer: this.device.createBuffer( {
-					label: 'timestamp result buffer',
-					size: size,
-					usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
-				} )
-			};
-
-		}
-
-		const { resolveBuffer, resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-
-		encoder.resolveQuerySet( renderContextData.timestampQuerySet, 0, 2, resolveBuffer, 0 );
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			encoder.copyBufferToBuffer( resolveBuffer, 0, resultBuffer, 0, size );
-
-		}
-
-	}
-
-	/**
-	 * Resolves the time stamp for the given render context and type.
-	 *
-	 * @async
-	 * @param {RenderContext} renderContext - The render context.
-	 * @param {String} type - The render context.
-	 * @return {Promise} A Promise that resolves when the time stamp has been computed.
-	 */
-	async resolveTimestampAsync( renderContext, type = 'render' ) {
-
-		if ( ! this.trackTimestamp ) return;
-
-		const renderContextData = this.get( renderContext );
-
-		if ( renderContextData.currentTimestampQueryBuffers === undefined ) return;
-
-		const { resultBuffer } = renderContextData.currentTimestampQueryBuffers;
-
-		if ( resultBuffer.mapState === 'unmapped' ) {
-
-			await resultBuffer.mapAsync( GPUMapMode.READ );
-
-			const times = new BigUint64Array( resultBuffer.getMappedRange() );
-			const duration = Number( times[ 1 ] - times[ 0 ] ) / 1000000;
-
-
-			this.renderer.info.updateTimestamp( type, duration );
-
-			resultBuffer.unmap();
-
-		}
-
-	}
 
 	// node builder
 

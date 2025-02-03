@@ -2,14 +2,12 @@ import Node from './Node.js';
 import { NodeShaderStage } from './constants.js';
 import { addMethodChaining, nodeProxy } from '../tsl/TSLCore.js';
 
-/** @module VaryingNode **/
-
 /**
  * Class for representing shader varyings as nodes. Varyings are create from
  * existing nodes like the following:
  *
  * ```js
- * const positionLocal = positionGeometry.varying( 'vPositionLocal' );
+ * const positionLocal = positionGeometry.toVarying( 'vPositionLocal' );
  * ```
  *
  * @augments Node
@@ -185,5 +183,21 @@ export const varying = /*@__PURE__*/ nodeProxy( VaryingNode );
  */
 export const vertexStage = ( node ) => varying( node );
 
-addMethodChaining( 'varying', varying );
-addMethodChaining( 'vertexStage', vertexStage );
+addMethodChaining( 'toVarying', varying );
+addMethodChaining( 'toVertexStage', vertexStage );
+
+// Deprecated
+
+addMethodChaining( 'varying', ( ...params ) => { // @deprecated, r173
+
+	console.warn( 'TSL.VaryingNode: .varying() has been renamed to .toVarying().' );
+	return varying( ...params );
+
+} );
+
+addMethodChaining( 'vertexStage', ( ...params ) => { // @deprecated, r173
+
+	console.warn( 'TSL.VaryingNode: .vertexStage() has been renamed to .toVertexStage().' );
+	return varying( ...params );
+
+} );
